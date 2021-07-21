@@ -1,0 +1,2830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022275FAE80BABBCAB0E444AF51A662C /* Pods-AGS300-iOS-DemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 439BAB02E5B0E89AD88D2862441B1F5E /* Pods-AGS300-iOS-DemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04358649A7F948E6BA7354C38BFE3DA0 /* ACPAudience-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 904FB7078455F1AA0A3EBBED4B2353D5 /* ACPAudience-dummy.m */; };
+		0510EEF1926AF424010A8D5475170645 /* ACPAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA85DB01878EA2F01F4F99C929A3AD /* ACPAnalytics-dummy.m */; };
+		06505E29FA4671B21BA3E17DE023A6CA /* ACPUserProfile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A3ECC23FBB08C63A77C1C1244D26BB /* ACPUserProfile-dummy.m */; };
+		07EB46520E77F6529A9C9E85D674E866 /* ACPPlacesMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A28DECC231CC7748F07FE2504282BF /* ACPPlacesMonitor-dummy.m */; };
+		0B7E86A3B76C0706BD261D14ED69215A /* ACPGriffon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2AF6423389B18F171F81FC79AEBD48 /* ACPGriffon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BFE476DFB1C6991E541C6CA5E38E245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0CA910C541B70A83214222ECC7BF1EA1 /* ACPUserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5D801B13CA548534B22CCD22DB0E79 /* ACPUserProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D76E5D67DEC84011D50344C5D9A11F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0E28D35665FF38E01D90E28322643D83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		116C6672613C240BC2A44A1BAD34B164 /* ACPPlaces-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A153990E5DBA73C6B0BE477601401 /* ACPPlaces-dummy.m */; };
+		15462F65E4873778B3150C559F1192BB /* ACPAudience.h in Headers */ = {isa = PBXBuildFile; fileRef = 6986B0FF58B031AB6261A7E98F49FC9D /* ACPAudience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15FEFAE50E957B79E51B2B495D50E43F /* ACPTarget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3C4ADAD02952105E0E3585DA4EB760 /* ACPTarget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179320C431950CCAAAE496780449326C /* ACPGriffon.h in Headers */ = {isa = PBXBuildFile; fileRef = A07CED87126400AAE180FDBDC243DF55 /* ACPGriffon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2030CE6D7C6C1A98EEB0B1B0E4FD9A9B /* ACPExtensionApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC109B65C77321BC7C707C9A9C5DABF /* ACPExtensionApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		247CF92CE2C9C7A37E1A867A58021D1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		265325C0C3FF6DD5D93363DA91CAB505 /* ACPPlacesMonitorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFCBC3A18B0D20042E1834EE4A91807 /* ACPPlacesMonitorConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28B348DEDDE1D66DEA731829AF627FC0 /* ACPPlacesMonitorLocationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E883982937D09C09737494CF421BCF /* ACPPlacesMonitorLocationDelegate.m */; };
+		2C25B658773A6ED0D5EB1BA4D8EEB405 /* empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B6D96324DB71F8AFAAE0CFFE6B716 /* empty.m */; };
+		302B24AD85CBA6BD08822B16AFD108D9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 045CBCA2BF646027C4E86EF5B29514C7 /* Empty.m */; };
+		388E333D50B6E3A1ED86A26EF41EEB3D /* ACPMobileServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 387F1A49F9767A48A48EAEA1EB73D4F9 /* ACPMobileServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49C4C057EE91E3908450E7394CA53515 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C6025B9A1871A27546C5A26F51DA52 /* Empty.m */; };
+		4D8DF23BF1390652CA75EA017D0999C7 /* ACPError.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F23CFB99E0B808EB84A73859A0EA2D /* ACPError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3BAC8D367B703F9C21F8FC62BE88A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4FC1FE0399B9D18C7D8A314E6B247CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		519AF2FBE4A5F4A233731C173B5709EA /* ACPCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 336E9B623FB95D4FFF706284AB6FBF5B /* ACPCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596D6667A48A12831D6F173B526F00EB /* Pods-AGS300-iOS-DemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E74ED8B7F6CDD2E5A720C813BAC49 /* Pods-AGS300-iOS-DemoUITests-dummy.m */; };
+		5D92E429AE327A014EF24FAB16C5BAE0 /* ACPExtensionError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B12B4EE513D98AC872E5715FF4E3D69 /* ACPExtensionError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DB565EEF3FABD26D1728564910CACFF /* ACPPlaces-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B4017362EEC1ED47EF19AAA730097C /* ACPPlaces-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E03653A1E181D656C720F80AB9689D5 /* ACPCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F78DE7B6FF2E7145FCCF626BCC3EB4 /* ACPCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61918FC00C8D6CFEEC38BEBD6E56689A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		62D9BE5431EC2CAA248E82BA46B2DA50 /* ACPPlacesMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 933A5DAD9B75B8500DF4C63D9C889FA3 /* ACPPlacesMonitor.m */; };
+		62DB4A0A0215025B26E4EEB0C19E0340 /* ACPPlacesMonitorInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5F4785C72BAE73C0AE3CBBB340E59A /* ACPPlacesMonitorInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65D65D314F421106DBD0AF35E4BF3D0F /* ACPLifecycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A642678D7B20CCA78D2829041B7C2F2 /* ACPLifecycle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		683FD80A9B11EF54D1DF646C9B3B0BFB /* ACPTargetOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2015DDB0BE3CD3C57DCA7D5F9D22EDF9 /* ACPTargetOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DBCD13E0AD99F3290E22525D976883A /* Pods-AGS300-iOS-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8800997CAFC463A8DF96FCCEBE47D0 /* Pods-AGS300-iOS-Demo-dummy.m */; };
+		704D8353FFD25E7F2BB47E83BE29FE90 /* ACPGriffon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA29240A03E7E81DB3C2634B1C0C2D0B /* ACPGriffon-dummy.m */; };
+		74158A46C435A113F27A80CB5741AF0A /* ACPAudience-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61DE4AA4E305E4834A1EFCD2DDEBD9EA /* ACPAudience-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		745AAE80112A71B79042044DAF9AB718 /* ACPAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD29AA5C33AE092FC4FBDFBB79D4487 /* ACPAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C85889B29BD196F00CE98728A5EA1F /* ACPTargetRequestObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B860B95D1722427CEE4F0D33C21B7AB8 /* ACPTargetRequestObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C20FBAA573739ACD8DB4D175B94DB41 /* ACPMobileVisitorId.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E109F611B004795FCE948B9F0365FB /* ACPMobileVisitorId.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C8CF0AF6CE1912F35EFB88FBAA52927 /* ACPUserProfile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8A1019CA46D97AB7E383C7EF6302D3F /* ACPUserProfile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EE9E642B9E20160629F48D42124937F /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2D1EDCC077927830F3FF8FB318280F /* Empty.m */; };
+		8116BA90F8E26143ECAFD8AB16791EF7 /* ACPSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 823C189615F1C2043D05AD5FB57B7B75 /* ACPSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83DF35FC4AAD46D1A911642CD85DC68C /* ACPCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4129A1CFEA1305724CCCDCE1B9BD96E /* ACPCore-dummy.m */; };
+		87C4A6EC0CA5E4A01E9EAB49D738CE39 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 36929A8180F004868D11DAD065ED3E99 /* Empty.m */; };
+		8AA84A8E1462BAA2B0987D6F3C33A8ED /* ACPTargetParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B61A8FC1A060BCC6C9CC6C095813667 /* ACPTargetParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F0FA08433BB348B8C483EE6B11EE201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8F2959E89C180CF7628689F740478565 /* Pods-AGS300-iOS-DemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0843CAE27EFFBD5B073B31D2B22DCD0 /* Pods-AGS300-iOS-DemoTests-dummy.m */; };
+		A398A87671918B664833FD54FFD28D05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A72BFA1F5D6E525FBB5F16BE01567FBC /* Pods-AGS300-iOS-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74BA5C54206927A9AF1B5D459692327B /* Pods-AGS300-iOS-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA0803B9474015937E37FE78E4D2AD72 /* ACPExtensionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 22862358B13A12AAA5C9A5F593748B20 /* ACPExtensionEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF14927A9BD6C467815AFCFF2F8B0A45 /* ACPTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = B13E9B22115BAA5D3DA829CFA2E6C0F0 /* ACPTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2704DF21CC4C83CC64A7908DBF2E3FA /* ACPPlacesMonitorListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 013C744FEDFEB7E4B78FAE85A80F01CE /* ACPPlacesMonitorListener.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B389948F8B68CBA2EC17DCEA91BB48E7 /* ACPExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A30D4BF62CCCC2A203BB3F6C99F5C99 /* ACPExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4EB5F9677950D0CC55981ECE3EFB105 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4EC8BFB62D3253CCCAF5F871CE95 /* Empty.m */; };
+		BB3253E862E729A5163D4AF81F6346C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BB6139FD2B564160106A5C5F775BB083 /* ACPIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5CCF8D9EE7ED7C5850823C5C65D1B8 /* ACPIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDC11300DBFD0300BDC208890486BA65 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 606D76F84EFEB856E7FADDEA36FA876E /* Empty.m */; };
+		BF06A6E6D235CF812FCFD25995F074E1 /* ACPTargetPrefetchObject.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA7B8228FFD931ACDF091254C388411 /* ACPTargetPrefetchObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C19E55EED0D53907328BE8CB846F6235 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B67CA30D06892ECADA1CC8DE36642 /* Empty.m */; };
+		C88C30D208F7C70B74E3FBB765C5658F /* ACPPlacesMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = C328A153BDD04AF40241D556EDA42CE9 /* ACPPlacesMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9DE651567A0445241925E66A8213E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CDF40B58B2FCD8966011992458D90912 /* ACPExtensionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = A929C080C47D312372174951A8F00FCF /* ACPExtensionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C957D8F2714DC90EEC838FC706CD9 /* ACPPlacesQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EA024B43BDE501237BB5C8C68A851A46 /* ACPPlacesQueue.m */; };
+		DA963978499FFFEE6CB12BEF1AEA1B48 /* ACPPlacesMonitor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 785E3FDAE045E3209566206367A58B29 /* ACPPlacesMonitor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAAE4E2085CD644CF22D118C5FFB0652 /* ACPPlacesMonitorListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E97BE1A564D47B80E3B9B642A74FB0 /* ACPPlacesMonitorListener.m */; };
+		DC06E2E8A4EF81B79FBACE64357D55B7 /* ACPPlacesMonitorInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8B8FFB32E079D7D935F7563D0AF30 /* ACPPlacesMonitorInternal.m */; };
+		DEB1B2E34BAD7E6564DDF80B09F7D8BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E10D60D753B33B91D8A9F81A6392D172 /* ACPPlacesMonitorLocationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE3F0950A939B7AFCFF987EBA734BBB /* ACPPlacesMonitorLocationDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E464E93CAFB93DC26C6F4FCC78CD18C4 /* ACPAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = BF923E6C05614FDCC8B6CE375CADE13E /* ACPAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E48C5E524FD397198041E3047410EEAF /* ACPNetworkServiceOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B68D769C6C8DAE3E63D520F21F0F63 /* ACPNetworkServiceOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB6FA265C3D5EFEA4789067D2102A67D /* ACPMobileServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0576AD2BFBC4C287256965E28B7B8 /* ACPMobileServices-dummy.m */; };
+		EDC024BD8B689790E63CE5D5A2287811 /* ACPPlacesQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = B13BD56067B7DC73A6C2EAF9F4B7FF8F /* ACPPlacesQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2ABCC61D4E1445575AEAEAB7553D01B /* ACPPlacesMonitorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDDDDBF7E6C94F4B5ADCC2727AA18A /* ACPPlacesMonitorConstants.m */; };
+		F431E4A974006738F0477E03FF7ABD6F /* ACPGriffonEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2500BEB333C848B3C5B2B3687B7E4E /* ACPGriffonEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71CDD4671E982140763102EC9FC643D /* ACPPlaces.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C563DB7BC80250BBBEA3BE35F349D2 /* ACPPlaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBCA3699520FE3FAE4FBA04C5A8044C4 /* ACPTargetProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4BA788B036829B70AD87D532386CDF /* ACPTargetProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD88CC35F76B2CE4035CFA2E888F5173 /* ACPMobileServices.h in Headers */ = {isa = PBXBuildFile; fileRef = BDBBA7314CABA1E98913B0F9834FA0F9 /* ACPMobileServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF57C16607747679D92219FD74DB221E /* ACPTarget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FBC43DF1EEC396B6FA306D6CA1A5B /* ACPTarget-dummy.m */; };
+		FF7F0A82AAC6DD47F3D9081BE710DCF4 /* Pods-AGS300-iOS-DemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0990FFF1C09BB8637CEC08B3DF640E7 /* Pods-AGS300-iOS-DemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		075FBF34FC7E4531418C41C9DDF3944B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03191BF87896CA77B8CA344A5F31DE2E;
+			remoteInfo = ACPPlacesMonitor;
+		};
+		116ADDB4513B50EA08BD85A8A3E53821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		254431FEF876B4D403C2A825BCF54D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		279258B4EC938EAF668F4981F69D3F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840CB4A51D058ACB3AEE61CE43330E9F;
+			remoteInfo = "Pods-AGS300-iOS-Demo";
+		};
+		3645DB76AB9DE17F19CC6FCCEAC3409A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		3751192B7E2DBDF1589373FB06FC6A12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69FC0E0E62CDDB545E49479C73D8481;
+			remoteInfo = ACPAnalytics;
+		};
+		37BA955545741575A16D8CB7C87F36EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		40E125BFA7D361C6D5A6FD491B9561CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		47D4A10867D357C909845F51ED72E3B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		567F88423701474830DB9AB0EC9BD38F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAB23789210D705E4F2F59BF4CC77B2;
+			remoteInfo = ACPUserProfile;
+		};
+		5BA5584519D1409A050E63D5CDA9E994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A9EDC37A53E5D39F64F6B61A7D5E5C;
+			remoteInfo = ACPGriffon;
+		};
+		6B68CC137ED69E08DCC478AF7ED11E5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69FC0E0E62CDDB545E49479C73D8481;
+			remoteInfo = ACPAnalytics;
+		};
+		76425111BC61E1A9DB2F23E52DE1968F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025D1400BFE904CEE95BE7522D3CBBE7;
+			remoteInfo = ACPPlaces;
+		};
+		76D7EE9CBA71B07542EE954BEF93D24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025D1400BFE904CEE95BE7522D3CBBE7;
+			remoteInfo = ACPPlaces;
+		};
+		87FCE963B7C5B3DA5EB0433DB10A5816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		9C7D65D89FECC32F83BB6FC8E66E382D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 564CD9B7C0D3BB56A415103869AA44CF;
+			remoteInfo = ACPMobileServices;
+		};
+		B3629546F2F494E9F05BCBBB1BEC89D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840CB4A51D058ACB3AEE61CE43330E9F;
+			remoteInfo = "Pods-AGS300-iOS-Demo";
+		};
+		C63FF26C13D4ED115C06312E8B3C21FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335D63DDF3EC5CE53EDDB1C4BCD708E7;
+			remoteInfo = ACPAudience;
+		};
+		E0C10D1B4A4EAEA3D1ACAEC5C8A7A159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF0B134E9BEA98C9F171CF7199FD64B;
+			remoteInfo = ACPTarget;
+		};
+		F23A53DFD4EF166B98317D1B463F2454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+		FFF69918F3D6AFF17824C6AB350BC462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F324573329120F52BFD49392D78B4464;
+			remoteInfo = ACPCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013C744FEDFEB7E4B78FAE85A80F01CE /* ACPPlacesMonitorListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlacesMonitorListener.h; path = ACPPlacesMonitor/ACPPlacesMonitorListener.h; sourceTree = "<group>"; };
+		045CBCA2BF646027C4E86EF5B29514C7 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		050BE6D3E0DC6E90DAD8DE85424DB373 /* Pods-AGS300-iOS-DemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGS300-iOS-DemoUITests-Info.plist"; sourceTree = "<group>"; };
+		0580C90019FFAB0A8B253469F5C6F664 /* ACPGriffon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPGriffon.release.xcconfig; sourceTree = "<group>"; };
+		06D7A052EF69DF252505DAAFFAD440C0 /* ACPMobileServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPMobileServices.debug.xcconfig; sourceTree = "<group>"; };
+		0B3C4ADAD02952105E0E3585DA4EB760 /* ACPTarget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPTarget-umbrella.h"; sourceTree = "<group>"; };
+		0EF8B8FFB32E079D7D935F7563D0AF30 /* ACPPlacesMonitorInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPPlacesMonitorInternal.m; path = ACPPlacesMonitor/ACPPlacesMonitorInternal.m; sourceTree = "<group>"; };
+		11381745637218648B729F49314B6D10 /* ACPGriffon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPGriffon.framework; path = ACPGriffon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B68D769C6C8DAE3E63D520F21F0F63 /* ACPNetworkServiceOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPNetworkServiceOverrider.h; path = include/ACPNetworkServiceOverrider.h; sourceTree = "<group>"; };
+		165E3A681B5DAE24C47B2B834D67ADC2 /* ACPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPCore.framework; path = ACPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A440140CE96F30C3DB602921095453A /* ACPPlacesMonitor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPPlacesMonitor-Info.plist"; sourceTree = "<group>"; };
+		1B61A8FC1A060BCC6C9CC6C095813667 /* ACPTargetParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetParameters.h; path = include/ACPTargetParameters.h; sourceTree = "<group>"; };
+		1CC109B65C77321BC7C707C9A9C5DABF /* ACPExtensionApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionApi.h; path = include/ACPExtensionApi.h; sourceTree = "<group>"; };
+		1E3FBC43DF1EEC396B6FA306D6CA1A5B /* ACPTarget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPTarget-dummy.m"; sourceTree = "<group>"; };
+		200995510848FEA64E9099FB2F1E7F98 /* Pods-AGS300-iOS-DemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AGS300-iOS-DemoUITests.modulemap"; sourceTree = "<group>"; };
+		2015DDB0BE3CD3C57DCA7D5F9D22EDF9 /* ACPTargetOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetOrder.h; path = include/ACPTargetOrder.h; sourceTree = "<group>"; };
+		21D680ED3677B17E65DBF66D542F35E1 /* ACPPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPPlaces.debug.xcconfig; sourceTree = "<group>"; };
+		2254F058D490211A9BC43BE3CAC14EAF /* ACPAudience.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPAudience.modulemap; sourceTree = "<group>"; };
+		22862358B13A12AAA5C9A5F593748B20 /* ACPExtensionEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionEvent.h; path = include/ACPExtensionEvent.h; sourceTree = "<group>"; };
+		248A153990E5DBA73C6B0BE477601401 /* ACPPlaces-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPPlaces-dummy.m"; sourceTree = "<group>"; };
+		24C93B859FE0D87A4CC57D6B7E2B13A9 /* libACPCore_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPCore_iOS.a; sourceTree = "<group>"; };
+		250DB77F4232A16332632894AD1289DA /* libACPPlaces_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPPlaces_iOS.a; sourceTree = "<group>"; };
+		28350FDB3F15F32955762A77F3170A46 /* ACPCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPCore.modulemap; sourceTree = "<group>"; };
+		287180ACE95AC8BE484C0CC46437166A /* ACPCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCore-prefix.pch"; sourceTree = "<group>"; };
+		296A814AD6B1537FFE1A3FDACB002D4B /* ACPCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPCore-Info.plist"; sourceTree = "<group>"; };
+		2A30D4BF62CCCC2A203BB3F6C99F5C99 /* ACPExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtension.h; path = include/ACPExtension.h; sourceTree = "<group>"; };
+		2ADD3131D0EE6B25D08960987642C556 /* ACPAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPAnalytics.debug.xcconfig; sourceTree = "<group>"; };
+		2C4D75505D552FCA48FE7381F5BAD161 /* Pods-AGS300-iOS-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGS300-iOS-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CE3F0950A939B7AFCFF987EBA734BBB /* ACPPlacesMonitorLocationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlacesMonitorLocationDelegate.h; path = ACPPlacesMonitor/ACPPlacesMonitorLocationDelegate.h; sourceTree = "<group>"; };
+		2CFCBC3A18B0D20042E1834EE4A91807 /* ACPPlacesMonitorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlacesMonitorConstants.h; path = ACPPlacesMonitor/ACPPlacesMonitorConstants.h; sourceTree = "<group>"; };
+		2E1AE2346258E42B1B61350D353A0B7A /* Pods-AGS300-iOS-DemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGS300-iOS-DemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		30B7F559328CAAF2AE4BF69BF0C3BEEB /* ACPUserProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPUserProfile.release.xcconfig; sourceTree = "<group>"; };
+		30EA5D1130760F9A9497FA5A2013A72B /* Pods_AGS300_iOS_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AGS300_iOS_DemoUITests.framework; path = "Pods-AGS300-iOS-DemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33499B182346937CBFBDD565DCDC77FD /* ACPPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPPlaces.release.xcconfig; sourceTree = "<group>"; };
+		336E9B623FB95D4FFF706284AB6FBF5B /* ACPCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPCore.h; path = include/ACPCore.h; sourceTree = "<group>"; };
+		36929A8180F004868D11DAD065ED3E99 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		370B67CA30D06892ECADA1CC8DE36642 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		387F1A49F9767A48A48EAEA1EB73D4F9 /* ACPMobileServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPMobileServices-umbrella.h"; sourceTree = "<group>"; };
+		3AD29AA5C33AE092FC4FBDFBB79D4487 /* ACPAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAnalytics-umbrella.h"; sourceTree = "<group>"; };
+		3B2DEDB843AD63E70A7670ED432B181F /* libACPAnalytics_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPAnalytics_iOS.a; sourceTree = "<group>"; };
+		3BBAE7E54501E1E4A543F46A726846AA /* ACPMobileServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPMobileServices.modulemap; sourceTree = "<group>"; };
+		3CBCB8D0830898507F1458096189196C /* Pods-AGS300-iOS-DemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGS300-iOS-DemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D12592B2C9B41FDB7CE3C08522B4C29 /* ACPAudience-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAudience-prefix.pch"; sourceTree = "<group>"; };
+		3E2500BEB333C848B3C5B2B3687B7E4E /* ACPGriffonEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPGriffonEvent.h; path = include/ACPGriffonEvent.h; sourceTree = "<group>"; };
+		3EDE774BE37130E330CB4CCC0145154D /* ACPTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPTarget.release.xcconfig; sourceTree = "<group>"; };
+		439BAB02E5B0E89AD88D2862441B1F5E /* Pods-AGS300-iOS-DemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AGS300-iOS-DemoTests-umbrella.h"; sourceTree = "<group>"; };
+		43C51A3E763FA74E81D3E4587600532F /* Pods-AGS300-iOS-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGS300-iOS-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		459FAE539A9E0417A1C6C2CA99893666 /* ACPAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPAnalytics.modulemap; sourceTree = "<group>"; };
+		45A28DECC231CC7748F07FE2504282BF /* ACPPlacesMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPPlacesMonitor-dummy.m"; sourceTree = "<group>"; };
+		48A755AB759418AC24EA83F59C3B471C /* ACPAudience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPAudience.framework; path = ACPAudience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEFA57252BD19CEE2884986BC9D0535 /* Pods_AGS300_iOS_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AGS300_iOS_DemoTests.framework; path = "Pods-AGS300-iOS-DemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1B60B04F3BDFB7B35DAA718930BAA5 /* ACPPlacesMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPPlacesMonitor.debug.xcconfig; sourceTree = "<group>"; };
+		4D2DEAC4EA1881D26DFADF1A31F7109E /* ACPPlaces-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPPlaces-prefix.pch"; sourceTree = "<group>"; };
+		4D54D40EE09B3D4F8D1357D6A9D5C104 /* ACPTarget-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPTarget-Info.plist"; sourceTree = "<group>"; };
+		4EB3C0BB7BCAC0655D28D7E5369C9926 /* ACPMobileServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPMobileServices.release.xcconfig; sourceTree = "<group>"; };
+		4FBA3B1AED34AA63FE57FF1969FE2834 /* ACPPlacesMonitor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPPlacesMonitor.modulemap; sourceTree = "<group>"; };
+		5512B99DCE6691604664A4077E99ED9F /* ACPMobileServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPMobileServices-prefix.pch"; sourceTree = "<group>"; };
+		55E109F611B004795FCE948B9F0365FB /* ACPMobileVisitorId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPMobileVisitorId.h; path = include/ACPMobileVisitorId.h; sourceTree = "<group>"; };
+		5894A690BBDF14BCA33405CB6B7A3D35 /* ACPGriffon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPGriffon.modulemap; sourceTree = "<group>"; };
+		590FDEB5AA043365E6835C183B403851 /* ACPPlaces.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPPlaces.modulemap; sourceTree = "<group>"; };
+		5A2AF6423389B18F171F81FC79AEBD48 /* ACPGriffon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPGriffon-umbrella.h"; sourceTree = "<group>"; };
+		5D8E74ED8B7F6CDD2E5A720C813BAC49 /* Pods-AGS300-iOS-DemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AGS300-iOS-DemoUITests-dummy.m"; sourceTree = "<group>"; };
+		606D76F84EFEB856E7FADDEA36FA876E /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		61DE4AA4E305E4834A1EFCD2DDEBD9EA /* ACPAudience-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAudience-umbrella.h"; sourceTree = "<group>"; };
+		66A332F403BCC45983C3618859C8674A /* ACPUserProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPUserProfile.framework; path = ACPUserProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6986B0FF58B031AB6261A7E98F49FC9D /* ACPAudience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPAudience.h; path = include/ACPAudience.h; sourceTree = "<group>"; };
+		6B12B4EE513D98AC872E5715FF4E3D69 /* ACPExtensionError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionError.h; path = include/ACPExtensionError.h; sourceTree = "<group>"; };
+		6E27583DF27C56A066457679D39D8C7A /* ACPUserProfile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPUserProfile.modulemap; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73021D8F9B6CF6F628BE4A77FBE47259 /* ACPGriffon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPGriffon-Info.plist"; sourceTree = "<group>"; };
+		73A3ECC23FBB08C63A77C1C1244D26BB /* ACPUserProfile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPUserProfile-dummy.m"; sourceTree = "<group>"; };
+		74BA5C54206927A9AF1B5D459692327B /* Pods-AGS300-iOS-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AGS300-iOS-Demo-umbrella.h"; sourceTree = "<group>"; };
+		75E883982937D09C09737494CF421BCF /* ACPPlacesMonitorLocationDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPPlacesMonitorLocationDelegate.m; path = ACPPlacesMonitor/ACPPlacesMonitorLocationDelegate.m; sourceTree = "<group>"; };
+		785E3FDAE045E3209566206367A58B29 /* ACPPlacesMonitor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPPlacesMonitor-umbrella.h"; sourceTree = "<group>"; };
+		78E520A0BF00D4E026A28322D3BB444E /* ACPTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPTarget.debug.xcconfig; sourceTree = "<group>"; };
+		78E97BE1A564D47B80E3B9B642A74FB0 /* ACPPlacesMonitorListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPPlacesMonitorListener.m; path = ACPPlacesMonitor/ACPPlacesMonitorListener.m; sourceTree = "<group>"; };
+		79EA944C5DB34C99AD1268C95DE4A0B9 /* ACPAudience-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPAudience-Info.plist"; sourceTree = "<group>"; };
+		7A642678D7B20CCA78D2829041B7C2F2 /* ACPLifecycle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPLifecycle.h; path = include/ACPLifecycle.h; sourceTree = "<group>"; };
+		7A9DD853BD0C54487750504E8FDDA490 /* ACPUserProfile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPUserProfile-prefix.pch"; sourceTree = "<group>"; };
+		7B592656B9A6249B4234CB7AB57988EB /* ACPPlacesMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPPlacesMonitor.release.xcconfig; sourceTree = "<group>"; };
+		7D52CB38535DE03CB89F53C2BA711D08 /* libACPIdentity_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPIdentity_iOS.a; sourceTree = "<group>"; };
+		7E5C1C8CC727BD139AE40108D9E59F96 /* Pods-AGS300-iOS-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AGS300-iOS-Demo.modulemap"; sourceTree = "<group>"; };
+		7F158349A1F8F3AAAA81923156C1B155 /* ACPTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPTarget.framework; path = ACPTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F78DE7B6FF2E7145FCCF626BCC3EB4 /* ACPCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCore-umbrella.h"; sourceTree = "<group>"; };
+		810B6D96324DB71F8AFAAE0CFFE6B716 /* empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = empty.m; path = include/empty.m; sourceTree = "<group>"; };
+		814456014332DAB8D24BDFB29550C4A9 /* Pods-AGS300-iOS-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGS300-iOS-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		823C189615F1C2043D05AD5FB57B7B75 /* ACPSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPSignal.h; path = include/ACPSignal.h; sourceTree = "<group>"; };
+		84726A2E1262A7347E231CF327C81A62 /* Pods-AGS300-iOS-DemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AGS300-iOS-DemoTests.modulemap"; sourceTree = "<group>"; };
+		85DA85DB01878EA2F01F4F99C929A3AD /* ACPAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPAnalytics-dummy.m"; sourceTree = "<group>"; };
+		86CDD1CF09C1FC6D62669AA9C0783609 /* Pods-AGS300-iOS-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGS300-iOS-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89B69EA5B0788EE2C359C66391D2B50A /* ACPTarget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPTarget.modulemap; sourceTree = "<group>"; };
+		8B27BC5B3DEE4C53EA8C66D20A6E0F0B /* ACPUserProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPUserProfile.debug.xcconfig; sourceTree = "<group>"; };
+		8C427D6C5D48A426BCA11416F8122EAF /* ACPAnalytics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPAnalytics-Info.plist"; sourceTree = "<group>"; };
+		8D88159CA075B4CA8E174C3B70F5EAB7 /* ACPAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPAnalytics.framework; path = ACPAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FFB039DD2146E9EEF4A9A7D97324C73 /* Pods-AGS300-iOS-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGS300-iOS-Demo-Info.plist"; sourceTree = "<group>"; };
+		904FB7078455F1AA0A3EBBED4B2353D5 /* ACPAudience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPAudience-dummy.m"; sourceTree = "<group>"; };
+		90DF1FCAABC6C5EB049BB491D67D20CC /* ACPPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPPlaces.framework; path = ACPPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9283660231D7E2C95E18035A34F6F392 /* Pods_AGS300_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AGS300_iOS_Demo.framework; path = "Pods-AGS300-iOS-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933A5DAD9B75B8500DF4C63D9C889FA3 /* ACPPlacesMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPPlacesMonitor.m; path = ACPPlacesMonitor/ACPPlacesMonitor.m; sourceTree = "<group>"; };
+		94C6025B9A1871A27546C5A26F51DA52 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		95529277FB3998FCEFFB5A3B7EC55F25 /* Pods-AGS300-iOS-DemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGS300-iOS-DemoTests-Info.plist"; sourceTree = "<group>"; };
+		9B5D801B13CA548534B22CCD22DB0E79 /* ACPUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPUserProfile.h; path = include/ACPUserProfile.h; sourceTree = "<group>"; };
+		9C1B9CDF7E670081C3DFA1E304A10762 /* libACPGriffon_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPGriffon_iOS.a; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED0576AD2BFBC4C287256965E28B7B8 /* ACPMobileServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPMobileServices-dummy.m"; sourceTree = "<group>"; };
+		A01C39B3681A0D3EDA6632FC0E76D501 /* ACPTarget-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPTarget-prefix.pch"; sourceTree = "<group>"; };
+		A051BB50151CC921850A83A92E579F4B /* ACPMobileServices-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPMobileServices-Info.plist"; sourceTree = "<group>"; };
+		A07CED87126400AAE180FDBDC243DF55 /* ACPGriffon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPGriffon.h; path = include/ACPGriffon.h; sourceTree = "<group>"; };
+		A0E931DC34FA8ACEA6D8640EF795DBE1 /* ACPAudience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPAudience.release.xcconfig; sourceTree = "<group>"; };
+		A23873E2322397F87E8CB852135DC6D3 /* libACPTarget_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPTarget_iOS.a; sourceTree = "<group>"; };
+		A2CDDDDBF7E6C94F4B5ADCC2727AA18A /* ACPPlacesMonitorConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPPlacesMonitorConstants.m; path = ACPPlacesMonitor/ACPPlacesMonitorConstants.m; sourceTree = "<group>"; };
+		A6FB08483BCAC20D1E63D59BE9186EF1 /* ACPGriffon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPGriffon-prefix.pch"; sourceTree = "<group>"; };
+		A929C080C47D312372174951A8F00FCF /* ACPExtensionListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionListener.h; path = include/ACPExtensionListener.h; sourceTree = "<group>"; };
+		AA2D1EDCC077927830F3FF8FB318280F /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		AA4BA788B036829B70AD87D532386CDF /* ACPTargetProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetProduct.h; path = include/ACPTargetProduct.h; sourceTree = "<group>"; };
+		AA5CCF8D9EE7ED7C5850823C5C65D1B8 /* ACPIdentity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPIdentity.h; path = include/ACPIdentity.h; sourceTree = "<group>"; };
+		AC10982D659CB03A4FA10B74544ADA2E /* ACPPlaces-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPPlaces-Info.plist"; sourceTree = "<group>"; };
+		B13BD56067B7DC73A6C2EAF9F4B7FF8F /* ACPPlacesQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlacesQueue.h; path = ACPPlacesMonitor/ACPPlacesQueue.h; sourceTree = "<group>"; };
+		B13E9B22115BAA5D3DA829CFA2E6C0F0 /* ACPTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTarget.h; path = include/ACPTarget.h; sourceTree = "<group>"; };
+		B293CE7135796F816859C664DB71C99F /* libACPSignal_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPSignal_iOS.a; sourceTree = "<group>"; };
+		B398FBDBC835F62232C2DD19A95821DF /* libACPAudience_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPAudience_iOS.a; sourceTree = "<group>"; };
+		B501FAEF73AD82E6A7E68B12B23C8B0A /* ACPAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPAnalytics.release.xcconfig; sourceTree = "<group>"; };
+		B50FCAE1DB7FE5ED8EAD60C3112C726D /* ACPPlacesMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPPlacesMonitor.framework; path = ACPPlacesMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B860B95D1722427CEE4F0D33C21B7AB8 /* ACPTargetRequestObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetRequestObject.h; path = include/ACPTargetRequestObject.h; sourceTree = "<group>"; };
+		BDBBA7314CABA1E98913B0F9834FA0F9 /* ACPMobileServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPMobileServices.h; path = include/ACPMobileServices.h; sourceTree = "<group>"; };
+		BF923E6C05614FDCC8B6CE375CADE13E /* ACPAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPAnalytics.h; path = include/ACPAnalytics.h; sourceTree = "<group>"; };
+		C328A153BDD04AF40241D556EDA42CE9 /* ACPPlacesMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlacesMonitor.h; path = ACPPlacesMonitor/ACPPlacesMonitor.h; sourceTree = "<group>"; };
+		C4129A1CFEA1305724CCCDCE1B9BD96E /* ACPCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPCore-dummy.m"; sourceTree = "<group>"; };
+		C5752A4F15F0B592DB5E68726BBA6BC0 /* ACPGriffon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPGriffon.debug.xcconfig; sourceTree = "<group>"; };
+		CD8AB9D8F507F90DB00D7FF6C9A34A42 /* Pods-AGS300-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGS300-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		CF448D36F2D2816F5F914E12E9126AE0 /* libACPUserProfile_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPUserProfile_iOS.a; sourceTree = "<group>"; };
+		CFA7B8228FFD931ACDF091254C388411 /* ACPTargetPrefetchObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetPrefetchObject.h; path = include/ACPTargetPrefetchObject.h; sourceTree = "<group>"; };
+		CFFEE7AC63DA4080F10C29CAC6DC7AB8 /* ACPPlacesMonitor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPPlacesMonitor-prefix.pch"; sourceTree = "<group>"; };
+		D0990FFF1C09BB8637CEC08B3DF640E7 /* Pods-AGS300-iOS-DemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AGS300-iOS-DemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		D4F23CFB99E0B808EB84A73859A0EA2D /* ACPError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPError.h; path = include/ACPError.h; sourceTree = "<group>"; };
+		D61DAADB4243B77FD802E7EDECB7C4C2 /* Pods-AGS300-iOS-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGS300-iOS-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7C563DB7BC80250BBBEA3BE35F349D2 /* ACPPlaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlaces.h; path = include/ACPPlaces.h; sourceTree = "<group>"; };
+		D8A1019CA46D97AB7E383C7EF6302D3F /* ACPUserProfile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPUserProfile-umbrella.h"; sourceTree = "<group>"; };
+		D94F2F42650D0E77DE25601B8483725D /* ACPAudience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPAudience.debug.xcconfig; sourceTree = "<group>"; };
+		DC3DF93A89F49DBFCB2FA1E0FBAB1CCF /* Pods-AGS300-iOS-DemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGS300-iOS-DemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE39B5A02E3ABD9BE4A737A751010088 /* ACPUserProfile-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ACPUserProfile-Info.plist"; sourceTree = "<group>"; };
+		DF2A4EC8BFB62D3253CCCAF5F871CE95 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		E34DE5511B914DF283856B6464365486 /* libACPLifecycle_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPLifecycle_iOS.a; sourceTree = "<group>"; };
+		E5B4017362EEC1ED47EF19AAA730097C /* ACPPlaces-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPPlaces-umbrella.h"; sourceTree = "<group>"; };
+		EA024B43BDE501237BB5C8C68A851A46 /* ACPPlacesQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPPlacesQueue.m; path = ACPPlacesMonitor/ACPPlacesQueue.m; sourceTree = "<group>"; };
+		EA29240A03E7E81DB3C2634B1C0C2D0B /* ACPGriffon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPGriffon-dummy.m"; sourceTree = "<group>"; };
+		EC5F4785C72BAE73C0AE3CBBB340E59A /* ACPPlacesMonitorInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPPlacesMonitorInternal.h; path = ACPPlacesMonitor/ACPPlacesMonitorInternal.h; sourceTree = "<group>"; };
+		ECB419EF04F116EFCAF878B91DB0083D /* ACPAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAnalytics-prefix.pch"; sourceTree = "<group>"; };
+		EE3EDD25D6ADE80DBF9F5BC7A21ACB1E /* ACPCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPCore.debug.xcconfig; sourceTree = "<group>"; };
+		F0843CAE27EFFBD5B073B31D2B22DCD0 /* Pods-AGS300-iOS-DemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AGS300-iOS-DemoTests-dummy.m"; sourceTree = "<group>"; };
+		F0F216A0B73C9FB3F7B168DD800F50AF /* libACPMobileServices_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPMobileServices_iOS.a; sourceTree = "<group>"; };
+		F6392C0D50FDBD8E1783E0E9FD31BB80 /* Pods-AGS300-iOS-DemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGS300-iOS-DemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8071CF42D2E4BF0BD648902B7ED33C0 /* ACPCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPCore.release.xcconfig; sourceTree = "<group>"; };
+		F8580FB6D4F083C08097707612365EC7 /* Pods-AGS300-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGS300-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		FC28F55D11FCA473493D248DAFE1ED18 /* Pods-AGS300-iOS-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGS300-iOS-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD8800997CAFC463A8DF96FCCEBE47D0 /* Pods-AGS300-iOS-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AGS300-iOS-Demo-dummy.m"; sourceTree = "<group>"; };
+		FF824C962E37E285744B5C2E36A67719 /* ACPMobileServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPMobileServices.framework; path = ACPMobileServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A9A935FDD5DE36F8DAF5DD50B13C395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFE476DFB1C6991E541C6CA5E38E245 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0B481CEE35B9DF1C7782D0BF60EB2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3253E862E729A5163D4AF81F6346C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C19F6DC12601316E8884C62C9FC73E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A398A87671918B664833FD54FFD28D05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A45956F995978FD6144CD08E73165DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9DE651567A0445241925E66A8213E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCC213AC509BE834B9C515349C5044C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D76E5D67DEC84011D50344C5D9A11F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD24443DBB5EC2F7653DD399371EE06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61918FC00C8D6CFEEC38BEBD6E56689A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2AA0FEFEA491D511A4271D9D0DEE31C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0FA08433BB348B8C483EE6B11EE201 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B252DA24C0E1D3F5715B948E2D0748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247CF92CE2C9C7A37E1A867A58021D1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A33E286754699B7C5930FE32CE2A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC1FE0399B9D18C7D8A314E6B247CDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9704EFC64D311E0B3354294259A4216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E28D35665FF38E01D90E28322643D83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28E25BD07AC0CDF21EC09D5A6DBF763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB1B2E34BAD7E6564DDF80B09F7D8BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6ACE6A5168BBC7D60214817DF542B63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3BAC8D367B703F9C21F8FC62BE88A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EA7506E9E49F9B981F8073A355952C0 /* Pods-AGS300-iOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7E5C1C8CC727BD139AE40108D9E59F96 /* Pods-AGS300-iOS-Demo.modulemap */,
+				814456014332DAB8D24BDFB29550C4A9 /* Pods-AGS300-iOS-Demo-acknowledgements.markdown */,
+				FC28F55D11FCA473493D248DAFE1ED18 /* Pods-AGS300-iOS-Demo-acknowledgements.plist */,
+				FD8800997CAFC463A8DF96FCCEBE47D0 /* Pods-AGS300-iOS-Demo-dummy.m */,
+				8FFB039DD2146E9EEF4A9A7D97324C73 /* Pods-AGS300-iOS-Demo-Info.plist */,
+				74BA5C54206927A9AF1B5D459692327B /* Pods-AGS300-iOS-Demo-umbrella.h */,
+				CD8AB9D8F507F90DB00D7FF6C9A34A42 /* Pods-AGS300-iOS-Demo.debug.xcconfig */,
+				F8580FB6D4F083C08097707612365EC7 /* Pods-AGS300-iOS-Demo.release.xcconfig */,
+			);
+			name = "Pods-AGS300-iOS-Demo";
+			path = "Target Support Files/Pods-AGS300-iOS-Demo";
+			sourceTree = "<group>";
+		};
+		0EB521588FB4729726E3D99DD9FB2CE0 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				BF923E6C05614FDCC8B6CE375CADE13E /* ACPAnalytics.h */,
+				AA2D1EDCC077927830F3FF8FB318280F /* Empty.m */,
+				2105AF15838F9C0285090D8B90C5153C /* Frameworks */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		102C6C277748605B1ED5CDBDA59131E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24C93B859FE0D87A4CC57D6B7E2B13A9 /* libACPCore_iOS.a */,
+				7D52CB38535DE03CB89F53C2BA711D08 /* libACPIdentity_iOS.a */,
+				E34DE5511B914DF283856B6464365486 /* libACPLifecycle_iOS.a */,
+				B293CE7135796F816859C664DB71C99F /* libACPSignal_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10A127C801D1CFD9F94B1C8662F3F1F8 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				336E9B623FB95D4FFF706284AB6FBF5B /* ACPCore.h */,
+				D4F23CFB99E0B808EB84A73859A0EA2D /* ACPError.h */,
+				2A30D4BF62CCCC2A203BB3F6C99F5C99 /* ACPExtension.h */,
+				1CC109B65C77321BC7C707C9A9C5DABF /* ACPExtensionApi.h */,
+				6B12B4EE513D98AC872E5715FF4E3D69 /* ACPExtensionError.h */,
+				22862358B13A12AAA5C9A5F593748B20 /* ACPExtensionEvent.h */,
+				A929C080C47D312372174951A8F00FCF /* ACPExtensionListener.h */,
+				AA5CCF8D9EE7ED7C5850823C5C65D1B8 /* ACPIdentity.h */,
+				7A642678D7B20CCA78D2829041B7C2F2 /* ACPLifecycle.h */,
+				55E109F611B004795FCE948B9F0365FB /* ACPMobileVisitorId.h */,
+				11B68D769C6C8DAE3E63D520F21F0F63 /* ACPNetworkServiceOverrider.h */,
+				823C189615F1C2043D05AD5FB57B7B75 /* ACPSignal.h */,
+				606D76F84EFEB856E7FADDEA36FA876E /* Empty.m */,
+				102C6C277748605B1ED5CDBDA59131E8 /* Frameworks */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		134CBA39908418F8DE6037C35DCFB14E /* ACPPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				79105A384393D22BB34A0998C662DA80 /* iOS */,
+				F5723C9B823EF9349A8260E1F53FE7AA /* Support Files */,
+			);
+			name = ACPPlaces;
+			path = ACPPlaces;
+			sourceTree = "<group>";
+		};
+		1350576A99605633ADC2327E890F1535 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAE7E54501E1E4A543F46A726846AA /* ACPMobileServices.modulemap */,
+				9ED0576AD2BFBC4C287256965E28B7B8 /* ACPMobileServices-dummy.m */,
+				A051BB50151CC921850A83A92E579F4B /* ACPMobileServices-Info.plist */,
+				5512B99DCE6691604664A4077E99ED9F /* ACPMobileServices-prefix.pch */,
+				387F1A49F9767A48A48EAEA1EB73D4F9 /* ACPMobileServices-umbrella.h */,
+				06D7A052EF69DF252505DAAFFAD440C0 /* ACPMobileServices.debug.xcconfig */,
+				4EB3C0BB7BCAC0655D28D7E5369C9926 /* ACPMobileServices.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPMobileServices";
+			sourceTree = "<group>";
+		};
+		183DE97FF921708FFAE4B8530ABBA3B7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDBBA7314CABA1E98913B0F9834FA0F9 /* ACPMobileServices.h */,
+				370B67CA30D06892ECADA1CC8DE36642 /* Empty.m */,
+				CCF579CD0C9D627002AF45D313BF887A /* Frameworks */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2105AF15838F9C0285090D8B90C5153C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B2DEDB843AD63E70A7670ED432B181F /* libACPAnalytics_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		237E3CA1F33EC1462D7DFE4A1E2351BF /* Pods-AGS300-iOS-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84726A2E1262A7347E231CF327C81A62 /* Pods-AGS300-iOS-DemoTests.modulemap */,
+				F6392C0D50FDBD8E1783E0E9FD31BB80 /* Pods-AGS300-iOS-DemoTests-acknowledgements.markdown */,
+				3CBCB8D0830898507F1458096189196C /* Pods-AGS300-iOS-DemoTests-acknowledgements.plist */,
+				F0843CAE27EFFBD5B073B31D2B22DCD0 /* Pods-AGS300-iOS-DemoTests-dummy.m */,
+				95529277FB3998FCEFFB5A3B7EC55F25 /* Pods-AGS300-iOS-DemoTests-Info.plist */,
+				439BAB02E5B0E89AD88D2862441B1F5E /* Pods-AGS300-iOS-DemoTests-umbrella.h */,
+				D61DAADB4243B77FD802E7EDECB7C4C2 /* Pods-AGS300-iOS-DemoTests.debug.xcconfig */,
+				43C51A3E763FA74E81D3E4587600532F /* Pods-AGS300-iOS-DemoTests.release.xcconfig */,
+			);
+			name = "Pods-AGS300-iOS-DemoTests";
+			path = "Target Support Files/Pods-AGS300-iOS-DemoTests";
+			sourceTree = "<group>";
+		};
+		3212928B74ED19C1E6726459A566C639 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C328A153BDD04AF40241D556EDA42CE9 /* ACPPlacesMonitor.h */,
+				933A5DAD9B75B8500DF4C63D9C889FA3 /* ACPPlacesMonitor.m */,
+				2CFCBC3A18B0D20042E1834EE4A91807 /* ACPPlacesMonitorConstants.h */,
+				A2CDDDDBF7E6C94F4B5ADCC2727AA18A /* ACPPlacesMonitorConstants.m */,
+				EC5F4785C72BAE73C0AE3CBBB340E59A /* ACPPlacesMonitorInternal.h */,
+				0EF8B8FFB32E079D7D935F7563D0AF30 /* ACPPlacesMonitorInternal.m */,
+				013C744FEDFEB7E4B78FAE85A80F01CE /* ACPPlacesMonitorListener.h */,
+				78E97BE1A564D47B80E3B9B642A74FB0 /* ACPPlacesMonitorListener.m */,
+				2CE3F0950A939B7AFCFF987EBA734BBB /* ACPPlacesMonitorLocationDelegate.h */,
+				75E883982937D09C09737494CF421BCF /* ACPPlacesMonitorLocationDelegate.m */,
+				B13BD56067B7DC73A6C2EAF9F4B7FF8F /* ACPPlacesQueue.h */,
+				EA024B43BDE501237BB5C8C68A851A46 /* ACPPlacesQueue.m */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3BAB8844E900EEDDCF6EC44F31BE5D2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23873E2322397F87E8CB852135DC6D3 /* libACPTarget_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42EB7BC8C65536A1AECF09439BCF2D88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2254F058D490211A9BC43BE3CAC14EAF /* ACPAudience.modulemap */,
+				904FB7078455F1AA0A3EBBED4B2353D5 /* ACPAudience-dummy.m */,
+				79EA944C5DB34C99AD1268C95DE4A0B9 /* ACPAudience-Info.plist */,
+				3D12592B2C9B41FDB7CE3C08522B4C29 /* ACPAudience-prefix.pch */,
+				61DE4AA4E305E4834A1EFCD2DDEBD9EA /* ACPAudience-umbrella.h */,
+				D94F2F42650D0E77DE25601B8483725D /* ACPAudience.debug.xcconfig */,
+				A0E931DC34FA8ACEA6D8640EF795DBE1 /* ACPAudience.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPAudience";
+			sourceTree = "<group>";
+		};
+		49C862C52D3CCE72809959EF1AB70F01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FBA3B1AED34AA63FE57FF1969FE2834 /* ACPPlacesMonitor.modulemap */,
+				45A28DECC231CC7748F07FE2504282BF /* ACPPlacesMonitor-dummy.m */,
+				1A440140CE96F30C3DB602921095453A /* ACPPlacesMonitor-Info.plist */,
+				CFFEE7AC63DA4080F10C29CAC6DC7AB8 /* ACPPlacesMonitor-prefix.pch */,
+				785E3FDAE045E3209566206367A58B29 /* ACPPlacesMonitor-umbrella.h */,
+				4B1B60B04F3BDFB7B35DAA718930BAA5 /* ACPPlacesMonitor.debug.xcconfig */,
+				7B592656B9A6249B4234CB7AB57988EB /* ACPPlacesMonitor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPPlacesMonitor";
+			sourceTree = "<group>";
+		};
+		49FEF04AA62E47BC237D355E6528456C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				459FAE539A9E0417A1C6C2CA99893666 /* ACPAnalytics.modulemap */,
+				85DA85DB01878EA2F01F4F99C929A3AD /* ACPAnalytics-dummy.m */,
+				8C427D6C5D48A426BCA11416F8122EAF /* ACPAnalytics-Info.plist */,
+				ECB419EF04F116EFCAF878B91DB0083D /* ACPAnalytics-prefix.pch */,
+				3AD29AA5C33AE092FC4FBDFBB79D4487 /* ACPAnalytics-umbrella.h */,
+				2ADD3131D0EE6B25D08960987642C556 /* ACPAnalytics.debug.xcconfig */,
+				B501FAEF73AD82E6A7E68B12B23C8B0A /* ACPAnalytics.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPAnalytics";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		64C3B17B4BDC8DC0C66F2C02CAF1EB91 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6986B0FF58B031AB6261A7E98F49FC9D /* ACPAudience.h */,
+				36929A8180F004868D11DAD065ED3E99 /* Empty.m */,
+				B9629DC09E9EDDB293AEC5C6FB3ADF50 /* Frameworks */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		712B2C3DE8176C8C0C8D925E2B054486 /* ACPCore */ = {
+			isa = PBXGroup;
+			children = (
+				10A127C801D1CFD9F94B1C8662F3F1F8 /* main */,
+				BC14E739FD5256EC2093801268E8B67F /* Support Files */,
+			);
+			name = ACPCore;
+			path = ACPCore;
+			sourceTree = "<group>";
+		};
+		71488AA986D1B52E3E46C87EA159C317 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9B5D801B13CA548534B22CCD22DB0E79 /* ACPUserProfile.h */,
+				94C6025B9A1871A27546C5A26F51DA52 /* Empty.m */,
+				E9E2EBF2FCACB754F1BA32C23554A75F /* Frameworks */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		79105A384393D22BB34A0998C662DA80 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D7C563DB7BC80250BBBEA3BE35F349D2 /* ACPPlaces.h */,
+				DF2A4EC8BFB62D3253CCCAF5F871CE95 /* Empty.m */,
+				A08789F2245C9C7756369D6524D31D5E /* Frameworks */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7AD6DDDCFE9807BA57C70C5C94311A2E /* ACPPlacesMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				3212928B74ED19C1E6726459A566C639 /* iOS */,
+				49C862C52D3CCE72809959EF1AB70F01 /* Support Files */,
+			);
+			name = ACPPlacesMonitor;
+			path = ACPPlacesMonitor;
+			sourceTree = "<group>";
+		};
+		7D6F089AA22FCE9EF9815D0201E20105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F52AFDD7D1B8600CD59B8304DC328242 /* ACPAnalytics */,
+				CD6ECA01537D01C07F103845858457C1 /* ACPAudience */,
+				712B2C3DE8176C8C0C8D925E2B054486 /* ACPCore */,
+				80F18B508B2594CFE7EAEC66F0AC3E58 /* ACPGriffon */,
+				F548189978E5FE72537D1AA484482622 /* ACPMobileServices */,
+				134CBA39908418F8DE6037C35DCFB14E /* ACPPlaces */,
+				7AD6DDDCFE9807BA57C70C5C94311A2E /* ACPPlacesMonitor */,
+				E432882009C41C8F708103342B0F30A6 /* ACPTarget */,
+				B54069DD97B4C3F130835BA5D791E51A /* ACPUserProfile */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80F18B508B2594CFE7EAEC66F0AC3E58 /* ACPGriffon */ = {
+			isa = PBXGroup;
+			children = (
+				8EDEBA25882294C34A990FF8CEE98A3D /* iOS */,
+				961280602FB2B0053B01F5551928EFDD /* Support Files */,
+			);
+			name = ACPGriffon;
+			path = ACPGriffon;
+			sourceTree = "<group>";
+		};
+		88A0348D9C583EBDED8B8CF235F0ABE8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B13E9B22115BAA5D3DA829CFA2E6C0F0 /* ACPTarget.h */,
+				2015DDB0BE3CD3C57DCA7D5F9D22EDF9 /* ACPTargetOrder.h */,
+				1B61A8FC1A060BCC6C9CC6C095813667 /* ACPTargetParameters.h */,
+				CFA7B8228FFD931ACDF091254C388411 /* ACPTargetPrefetchObject.h */,
+				AA4BA788B036829B70AD87D532386CDF /* ACPTargetProduct.h */,
+				B860B95D1722427CEE4F0D33C21B7AB8 /* ACPTargetRequestObject.h */,
+				810B6D96324DB71F8AFAAE0CFFE6B716 /* empty.m */,
+				3BAB8844E900EEDDCF6EC44F31BE5D2E /* Frameworks */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8A4DAE3D91CFAC6FD4C0FD93A0290F78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B9CDF7E670081C3DFA1E304A10762 /* libACPGriffon_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EDEBA25882294C34A990FF8CEE98A3D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A07CED87126400AAE180FDBDC243DF55 /* ACPGriffon.h */,
+				3E2500BEB333C848B3C5B2B3687B7E4E /* ACPGriffonEvent.h */,
+				045CBCA2BF646027C4E86EF5B29514C7 /* Empty.m */,
+				8A4DAE3D91CFAC6FD4C0FD93A0290F78 /* Frameworks */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		961280602FB2B0053B01F5551928EFDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5894A690BBDF14BCA33405CB6B7A3D35 /* ACPGriffon.modulemap */,
+				EA29240A03E7E81DB3C2634B1C0C2D0B /* ACPGriffon-dummy.m */,
+				73021D8F9B6CF6F628BE4A77FBE47259 /* ACPGriffon-Info.plist */,
+				A6FB08483BCAC20D1E63D59BE9186EF1 /* ACPGriffon-prefix.pch */,
+				5A2AF6423389B18F171F81FC79AEBD48 /* ACPGriffon-umbrella.h */,
+				C5752A4F15F0B592DB5E68726BBA6BC0 /* ACPGriffon.debug.xcconfig */,
+				0580C90019FFAB0A8B253469F5C6F664 /* ACPGriffon.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPGriffon";
+			sourceTree = "<group>";
+		};
+		A08789F2245C9C7756369D6524D31D5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				250DB77F4232A16332632894AD1289DA /* libACPPlaces_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7FE93B2CADD4312ACE61A74F76ED3F4 /* Pods-AGS300-iOS-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				200995510848FEA64E9099FB2F1E7F98 /* Pods-AGS300-iOS-DemoUITests.modulemap */,
+				DC3DF93A89F49DBFCB2FA1E0FBAB1CCF /* Pods-AGS300-iOS-DemoUITests-acknowledgements.markdown */,
+				2E1AE2346258E42B1B61350D353A0B7A /* Pods-AGS300-iOS-DemoUITests-acknowledgements.plist */,
+				5D8E74ED8B7F6CDD2E5A720C813BAC49 /* Pods-AGS300-iOS-DemoUITests-dummy.m */,
+				050BE6D3E0DC6E90DAD8DE85424DB373 /* Pods-AGS300-iOS-DemoUITests-Info.plist */,
+				D0990FFF1C09BB8637CEC08B3DF640E7 /* Pods-AGS300-iOS-DemoUITests-umbrella.h */,
+				86CDD1CF09C1FC6D62669AA9C0783609 /* Pods-AGS300-iOS-DemoUITests.debug.xcconfig */,
+				2C4D75505D552FCA48FE7381F5BAD161 /* Pods-AGS300-iOS-DemoUITests.release.xcconfig */,
+			);
+			name = "Pods-AGS300-iOS-DemoUITests";
+			path = "Target Support Files/Pods-AGS300-iOS-DemoUITests";
+			sourceTree = "<group>";
+		};
+		A8658321E395158D1A63E4F6BA78EEBD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7506E9E49F9B981F8073A355952C0 /* Pods-AGS300-iOS-Demo */,
+				237E3CA1F33EC1462D7DFE4A1E2351BF /* Pods-AGS300-iOS-DemoTests */,
+				A7FE93B2CADD4312ACE61A74F76ED3F4 /* Pods-AGS300-iOS-DemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA7EA4C300AFCF57EA0E4784ACDF7977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D88159CA075B4CA8E174C3B70F5EAB7 /* ACPAnalytics.framework */,
+				48A755AB759418AC24EA83F59C3B471C /* ACPAudience.framework */,
+				165E3A681B5DAE24C47B2B834D67ADC2 /* ACPCore.framework */,
+				11381745637218648B729F49314B6D10 /* ACPGriffon.framework */,
+				FF824C962E37E285744B5C2E36A67719 /* ACPMobileServices.framework */,
+				90DF1FCAABC6C5EB049BB491D67D20CC /* ACPPlaces.framework */,
+				B50FCAE1DB7FE5ED8EAD60C3112C726D /* ACPPlacesMonitor.framework */,
+				7F158349A1F8F3AAAA81923156C1B155 /* ACPTarget.framework */,
+				66A332F403BCC45983C3618859C8674A /* ACPUserProfile.framework */,
+				9283660231D7E2C95E18035A34F6F392 /* Pods_AGS300_iOS_Demo.framework */,
+				4AEFA57252BD19CEE2884986BC9D0535 /* Pods_AGS300_iOS_DemoTests.framework */,
+				30EA5D1130760F9A9497FA5A2013A72B /* Pods_AGS300_iOS_DemoUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC631607CD4BE9D26FF0750238112A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89B69EA5B0788EE2C359C66391D2B50A /* ACPTarget.modulemap */,
+				1E3FBC43DF1EEC396B6FA306D6CA1A5B /* ACPTarget-dummy.m */,
+				4D54D40EE09B3D4F8D1357D6A9D5C104 /* ACPTarget-Info.plist */,
+				A01C39B3681A0D3EDA6632FC0E76D501 /* ACPTarget-prefix.pch */,
+				0B3C4ADAD02952105E0E3585DA4EB760 /* ACPTarget-umbrella.h */,
+				78E520A0BF00D4E026A28322D3BB444E /* ACPTarget.debug.xcconfig */,
+				3EDE774BE37130E330CB4CCC0145154D /* ACPTarget.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPTarget";
+			sourceTree = "<group>";
+		};
+		B54069DD97B4C3F130835BA5D791E51A /* ACPUserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				71488AA986D1B52E3E46C87EA159C317 /* iOS */,
+				B90EF6272084F0F275DC9677FA90AB61 /* Support Files */,
+			);
+			name = ACPUserProfile;
+			path = ACPUserProfile;
+			sourceTree = "<group>";
+		};
+		B90EF6272084F0F275DC9677FA90AB61 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E27583DF27C56A066457679D39D8C7A /* ACPUserProfile.modulemap */,
+				73A3ECC23FBB08C63A77C1C1244D26BB /* ACPUserProfile-dummy.m */,
+				DE39B5A02E3ABD9BE4A737A751010088 /* ACPUserProfile-Info.plist */,
+				7A9DD853BD0C54487750504E8FDDA490 /* ACPUserProfile-prefix.pch */,
+				D8A1019CA46D97AB7E383C7EF6302D3F /* ACPUserProfile-umbrella.h */,
+				8B27BC5B3DEE4C53EA8C66D20A6E0F0B /* ACPUserProfile.debug.xcconfig */,
+				30B7F559328CAAF2AE4BF69BF0C3BEEB /* ACPUserProfile.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPUserProfile";
+			sourceTree = "<group>";
+		};
+		B9629DC09E9EDDB293AEC5C6FB3ADF50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B398FBDBC835F62232C2DD19A95821DF /* libACPAudience_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC14E739FD5256EC2093801268E8B67F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28350FDB3F15F32955762A77F3170A46 /* ACPCore.modulemap */,
+				C4129A1CFEA1305724CCCDCE1B9BD96E /* ACPCore-dummy.m */,
+				296A814AD6B1537FFE1A3FDACB002D4B /* ACPCore-Info.plist */,
+				287180ACE95AC8BE484C0CC46437166A /* ACPCore-prefix.pch */,
+				80F78DE7B6FF2E7145FCCF626BCC3EB4 /* ACPCore-umbrella.h */,
+				EE3EDD25D6ADE80DBF9F5BC7A21ACB1E /* ACPCore.debug.xcconfig */,
+				F8071CF42D2E4BF0BD648902B7ED33C0 /* ACPCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPCore";
+			sourceTree = "<group>";
+		};
+		CCF579CD0C9D627002AF45D313BF887A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0F216A0B73C9FB3F7B168DD800F50AF /* libACPMobileServices_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD6ECA01537D01C07F103845858457C1 /* ACPAudience */ = {
+			isa = PBXGroup;
+			children = (
+				64C3B17B4BDC8DC0C66F2C02CAF1EB91 /* iOS */,
+				42EB7BC8C65536A1AECF09439BCF2D88 /* Support Files */,
+			);
+			name = ACPAudience;
+			path = ACPAudience;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7D6F089AA22FCE9EF9815D0201E20105 /* Pods */,
+				AA7EA4C300AFCF57EA0E4784ACDF7977 /* Products */,
+				A8658321E395158D1A63E4F6BA78EEBD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E432882009C41C8F708103342B0F30A6 /* ACPTarget */ = {
+			isa = PBXGroup;
+			children = (
+				88A0348D9C583EBDED8B8CF235F0ABE8 /* iOS */,
+				AAC631607CD4BE9D26FF0750238112A7 /* Support Files */,
+			);
+			name = ACPTarget;
+			path = ACPTarget;
+			sourceTree = "<group>";
+		};
+		E9E2EBF2FCACB754F1BA32C23554A75F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF448D36F2D2816F5F914E12E9126AE0 /* libACPUserProfile_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52AFDD7D1B8600CD59B8304DC328242 /* ACPAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				0EB521588FB4729726E3D99DD9FB2CE0 /* main */,
+				49FEF04AA62E47BC237D355E6528456C /* Support Files */,
+			);
+			name = ACPAnalytics;
+			path = ACPAnalytics;
+			sourceTree = "<group>";
+		};
+		F548189978E5FE72537D1AA484482622 /* ACPMobileServices */ = {
+			isa = PBXGroup;
+			children = (
+				183DE97FF921708FFAE4B8530ABBA3B7 /* iOS */,
+				1350576A99605633ADC2327E890F1535 /* Support Files */,
+			);
+			name = ACPMobileServices;
+			path = ACPMobileServices;
+			sourceTree = "<group>";
+		};
+		F5723C9B823EF9349A8260E1F53FE7AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				590FDEB5AA043365E6835C183B403851 /* ACPPlaces.modulemap */,
+				248A153990E5DBA73C6B0BE477601401 /* ACPPlaces-dummy.m */,
+				AC10982D659CB03A4FA10B74544ADA2E /* ACPPlaces-Info.plist */,
+				4D2DEAC4EA1881D26DFADF1A31F7109E /* ACPPlaces-prefix.pch */,
+				E5B4017362EEC1ED47EF19AAA730097C /* ACPPlaces-umbrella.h */,
+				21D680ED3677B17E65DBF66D542F35E1 /* ACPPlaces.debug.xcconfig */,
+				33499B182346937CBFBDD565DCDC77FD /* ACPPlaces.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPPlaces";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		010CBBC2A898B09A645936FCC636B721 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72BFA1F5D6E525FBB5F16BE01567FBC /* Pods-AGS300-iOS-Demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584B00AD51B68D6CE77C62E0D5B2A29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA963978499FFFEE6CB12BEF1AEA1B48 /* ACPPlacesMonitor-umbrella.h in Headers */,
+				C88C30D208F7C70B74E3FBB765C5658F /* ACPPlacesMonitor.h in Headers */,
+				265325C0C3FF6DD5D93363DA91CAB505 /* ACPPlacesMonitorConstants.h in Headers */,
+				62DB4A0A0215025B26E4EEB0C19E0340 /* ACPPlacesMonitorInternal.h in Headers */,
+				B2704DF21CC4C83CC64A7908DBF2E3FA /* ACPPlacesMonitorListener.h in Headers */,
+				E10D60D753B33B91D8A9F81A6392D172 /* ACPPlacesMonitorLocationDelegate.h in Headers */,
+				EDC024BD8B689790E63CE5D5A2287811 /* ACPPlacesQueue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252B68AF0EB647D4F8CA74A243885114 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745AAE80112A71B79042044DAF9AB718 /* ACPAnalytics-umbrella.h in Headers */,
+				E464E93CAFB93DC26C6F4FCC78CD18C4 /* ACPAnalytics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C8C86ABDA39E56F1BB9365285EE267 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB565EEF3FABD26D1728564910CACFF /* ACPPlaces-umbrella.h in Headers */,
+				F71CDD4671E982140763102EC9FC643D /* ACPPlaces.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6390839F0313844973137D6F0E2265CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7F0A82AAC6DD47F3D9081BE710DCF4 /* Pods-AGS300-iOS-DemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93FC5E1AD48FC48EED4B49478DC62CE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7E86A3B76C0706BD261D14ED69215A /* ACPGriffon-umbrella.h in Headers */,
+				179320C431950CCAAAE496780449326C /* ACPGriffon.h in Headers */,
+				F431E4A974006738F0477E03FF7ABD6F /* ACPGriffonEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBF67E9010C158C8DB5DDAEF0E5C7C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FEFAE50E957B79E51B2B495D50E43F /* ACPTarget-umbrella.h in Headers */,
+				AF14927A9BD6C467815AFCFF2F8B0A45 /* ACPTarget.h in Headers */,
+				683FD80A9B11EF54D1DF646C9B3B0BFB /* ACPTargetOrder.h in Headers */,
+				8AA84A8E1462BAA2B0987D6F3C33A8ED /* ACPTargetParameters.h in Headers */,
+				BF06A6E6D235CF812FCFD25995F074E1 /* ACPTargetPrefetchObject.h in Headers */,
+				FBCA3699520FE3FAE4FBA04C5A8044C4 /* ACPTargetProduct.h in Headers */,
+				75C85889B29BD196F00CE98728A5EA1F /* ACPTargetRequestObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E838F59B35DDC509171D4E2B090BEBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74158A46C435A113F27A80CB5741AF0A /* ACPAudience-umbrella.h in Headers */,
+				15462F65E4873778B3150C559F1192BB /* ACPAudience.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A3F7C0895F1FDC043B145CD4361243 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E03653A1E181D656C720F80AB9689D5 /* ACPCore-umbrella.h in Headers */,
+				519AF2FBE4A5F4A233731C173B5709EA /* ACPCore.h in Headers */,
+				4D8DF23BF1390652CA75EA017D0999C7 /* ACPError.h in Headers */,
+				B389948F8B68CBA2EC17DCEA91BB48E7 /* ACPExtension.h in Headers */,
+				2030CE6D7C6C1A98EEB0B1B0E4FD9A9B /* ACPExtensionApi.h in Headers */,
+				5D92E429AE327A014EF24FAB16C5BAE0 /* ACPExtensionError.h in Headers */,
+				AA0803B9474015937E37FE78E4D2AD72 /* ACPExtensionEvent.h in Headers */,
+				CDF40B58B2FCD8966011992458D90912 /* ACPExtensionListener.h in Headers */,
+				BB6139FD2B564160106A5C5F775BB083 /* ACPIdentity.h in Headers */,
+				65D65D314F421106DBD0AF35E4BF3D0F /* ACPLifecycle.h in Headers */,
+				7C20FBAA573739ACD8DB4D175B94DB41 /* ACPMobileVisitorId.h in Headers */,
+				E48C5E524FD397198041E3047410EEAF /* ACPNetworkServiceOverrider.h in Headers */,
+				8116BA90F8E26143ECAFD8AB16791EF7 /* ACPSignal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63584E5EC94971C05AA6C173FB7A09B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388E333D50B6E3A1ED86A26EF41EEB3D /* ACPMobileServices-umbrella.h in Headers */,
+				FD88CC35F76B2CE4035CFA2E888F5173 /* ACPMobileServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CE93F53F0761E861053B7A38AB69E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8CF0AF6CE1912F35EFB88FBAA52927 /* ACPUserProfile-umbrella.h in Headers */,
+				0CA910C541B70A83214222ECC7BF1EA1 /* ACPUserProfile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A5ED90B602724503340F951C2D42C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022275FAE80BABBCAB0E444AF51A662C /* Pods-AGS300-iOS-DemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		025D1400BFE904CEE95BE7522D3CBBE7 /* ACPPlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B73B7121B7A5817A6DE667F7EB2F885D /* Build configuration list for PBXNativeTarget "ACPPlaces" */;
+			buildPhases = (
+				45C8C86ABDA39E56F1BB9365285EE267 /* Headers */,
+				C8171BB84DDCF993DB5218AD22AB83F8 /* Sources */,
+				ACCC213AC509BE834B9C515349C5044C /* Frameworks */,
+				5911859282C5EA1C6C00867AF06087C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7A2DB8231533D79D8BC482E342F61DF /* PBXTargetDependency */,
+			);
+			name = ACPPlaces;
+			productName = ACPPlaces;
+			productReference = 90DF1FCAABC6C5EB049BB491D67D20CC /* ACPPlaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		03191BF87896CA77B8CA344A5F31DE2E /* ACPPlacesMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327F6370E2C3446CCAEDD0CC3AE2DCD8 /* Build configuration list for PBXNativeTarget "ACPPlacesMonitor" */;
+			buildPhases = (
+				0584B00AD51B68D6CE77C62E0D5B2A29 /* Headers */,
+				F6FA39E5EEC7FCE26E12FC9C55BA3741 /* Sources */,
+				C2AA0FEFEA491D511A4271D9D0DEE31C /* Frameworks */,
+				C3D00C26299DAC11658BCEB6B9E8FC94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89AF7E5840467F0B44EA49757B58DE64 /* PBXTargetDependency */,
+				2ED44F5A9F0C5060029F21C69CCC5C33 /* PBXTargetDependency */,
+			);
+			name = ACPPlacesMonitor;
+			productName = ACPPlacesMonitor;
+			productReference = B50FCAE1DB7FE5ED8EAD60C3112C726D /* ACPPlacesMonitor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		08A9EDC37A53E5D39F64F6B61A7D5E5C /* ACPGriffon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB21DAC98C82B1AFD244D04DF13C9AE5 /* Build configuration list for PBXNativeTarget "ACPGriffon" */;
+			buildPhases = (
+				93FC5E1AD48FC48EED4B49478DC62CE0 /* Headers */,
+				425A8109F4C83AD0469F1DEB82FD8312 /* Sources */,
+				C8A33E286754699B7C5930FE32CE2A7C /* Frameworks */,
+				E431E46173F7F3F6848BC3CEFAF63E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368F5102A24976B44CA89C2B096FB4A3 /* PBXTargetDependency */,
+			);
+			name = ACPGriffon;
+			productName = ACPGriffon;
+			productReference = 11381745637218648B729F49314B6D10 /* ACPGriffon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		335D63DDF3EC5CE53EDDB1C4BCD708E7 /* ACPAudience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B7A575ECF697B0D1E1E17CBEE3663FD /* Build configuration list for PBXNativeTarget "ACPAudience" */;
+			buildPhases = (
+				9E838F59B35DDC509171D4E2B090BEBD /* Headers */,
+				F47D680B9F8C43CAE8002CF30625F237 /* Sources */,
+				BD24443DBB5EC2F7653DD399371EE06D /* Frameworks */,
+				BF2EEF7B75C27ADD6438F13706114100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DBBFEA32EFF809DADBD881B414CCEAB /* PBXTargetDependency */,
+			);
+			name = ACPAudience;
+			productName = ACPAudience;
+			productReference = 48A755AB759418AC24EA83F59C3B471C /* ACPAudience.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4CAB23789210D705E4F2F59BF4CC77B2 /* ACPUserProfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9302E5ADD810B423A6635603CA3C4784 /* Build configuration list for PBXNativeTarget "ACPUserProfile" */;
+			buildPhases = (
+				E8CE93F53F0761E861053B7A38AB69E8 /* Headers */,
+				E941546BE42BFF4BA584CE6ABE68797A /* Sources */,
+				D28E25BD07AC0CDF21EC09D5A6DBF763 /* Frameworks */,
+				AB028C4990F199BEFE6EEEA6A2FB6BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63B04E8B2AC2774E57271F038CF94788 /* PBXTargetDependency */,
+			);
+			name = ACPUserProfile;
+			productName = ACPUserProfile;
+			productReference = 66A332F403BCC45983C3618859C8674A /* ACPUserProfile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		564CD9B7C0D3BB56A415103869AA44CF /* ACPMobileServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27392883F221239C5E7250E80CFA47F2 /* Build configuration list for PBXNativeTarget "ACPMobileServices" */;
+			buildPhases = (
+				E63584E5EC94971C05AA6C173FB7A09B /* Headers */,
+				B5EA03E24C9688B211FB3B1473049280 /* Sources */,
+				A45956F995978FD6144CD08E73165DE9 /* Frameworks */,
+				0C0AA2D9D40DD0E290CCD268E1411CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D11EB01E456421ED43B15FE05FEFD23 /* PBXTargetDependency */,
+				74114DC0DB794615FE7C85281985D695 /* PBXTargetDependency */,
+			);
+			name = ACPMobileServices;
+			productName = ACPMobileServices;
+			productReference = FF824C962E37E285744B5C2E36A67719 /* ACPMobileServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		840CB4A51D058ACB3AEE61CE43330E9F /* Pods-AGS300-iOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB37277B1D7377E42482D171A00CF19 /* Build configuration list for PBXNativeTarget "Pods-AGS300-iOS-Demo" */;
+			buildPhases = (
+				010CBBC2A898B09A645936FCC636B721 /* Headers */,
+				E329F556B6A29681CD77484FDEA85B42 /* Sources */,
+				78C19F6DC12601316E8884C62C9FC73E /* Frameworks */,
+				D7DFE5610392B4D91018E4D46A436401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7F5B31750D20B1CD602AEBD36FD52F1 /* PBXTargetDependency */,
+				BCA89B10A3971B0DDEC5DBA8BF46E90F /* PBXTargetDependency */,
+				788A35E7C45FD9E790AEDC776A705B5E /* PBXTargetDependency */,
+				DC0EC874E06E44F2CCB8306D6DAF967D /* PBXTargetDependency */,
+				77970408E240607C36832CECB89B72ED /* PBXTargetDependency */,
+				55AA6C88E85635DCCFE9F6CA9D71C51C /* PBXTargetDependency */,
+				CD68B158338FC2256F455D24AEF86AA7 /* PBXTargetDependency */,
+				D8D4013F63574527D16C130825E12640 /* PBXTargetDependency */,
+				C071C7F255B6309A09A5F847235D12F4 /* PBXTargetDependency */,
+			);
+			name = "Pods-AGS300-iOS-Demo";
+			productName = "Pods-AGS300-iOS-Demo";
+			productReference = 9283660231D7E2C95E18035A34F6F392 /* Pods_AGS300_iOS_Demo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9CF0B134E9BEA98C9F171CF7199FD64B /* ACPTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD8B3107C005EF1A7520010CA48AD545 /* Build configuration list for PBXNativeTarget "ACPTarget" */;
+			buildPhases = (
+				9DBF67E9010C158C8DB5DDAEF0E5C7C7 /* Headers */,
+				0671CE0DC0D1D9F1B29BEEC2955137E6 /* Sources */,
+				C9704EFC64D311E0B3354294259A4216 /* Frameworks */,
+				98F4546F823E0A49C4AE7B85F9611124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78CF5760718E0D7DFCBD6287CAF103C4 /* PBXTargetDependency */,
+			);
+			name = ACPTarget;
+			productName = ACPTarget;
+			productReference = 7F158349A1F8F3AAAA81923156C1B155 /* ACPTarget.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B69FC0E0E62CDDB545E49479C73D8481 /* ACPAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0720C82940FE3B86CD7DEBF8DC05AE /* Build configuration list for PBXNativeTarget "ACPAnalytics" */;
+			buildPhases = (
+				252B68AF0EB647D4F8CA74A243885114 /* Headers */,
+				A5F1C97C0EAE6E21BAB031550AB841F3 /* Sources */,
+				2A9A935FDD5DE36F8DAF5DD50B13C395 /* Frameworks */,
+				4A5F6CD2EB5EC82DCAFFADA1B49F1D7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0500B182F765C4FCA4188FD44D145FC6 /* PBXTargetDependency */,
+			);
+			name = ACPAnalytics;
+			productName = ACPAnalytics;
+			productReference = 8D88159CA075B4CA8E174C3B70F5EAB7 /* ACPAnalytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD33D78777F0684379B25D755E194376 /* Pods-AGS300-iOS-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477A4ECE2766408D6BA33702EF9B156E /* Build configuration list for PBXNativeTarget "Pods-AGS300-iOS-DemoUITests" */;
+			buildPhases = (
+				6390839F0313844973137D6F0E2265CF /* Headers */,
+				4047CC60A1593859FB60F27DAD0CF5DD /* Sources */,
+				6F0B481CEE35B9DF1C7782D0BF60EB2A /* Frameworks */,
+				8482DEFC83189AD188FD3C20782353AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AC60D81FECF7A8218DB6E637D4B41F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-AGS300-iOS-DemoUITests";
+			productName = "Pods-AGS300-iOS-DemoUITests";
+			productReference = 30EA5D1130760F9A9497FA5A2013A72B /* Pods_AGS300_iOS_DemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2D9DD30225292207D6EE79BB4C28FD6 /* Pods-AGS300-iOS-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F827709B6BE6D637CF17BD92B09B342 /* Build configuration list for PBXNativeTarget "Pods-AGS300-iOS-DemoTests" */;
+			buildPhases = (
+				F2A5ED90B602724503340F951C2D42C7 /* Headers */,
+				5FFEAD2D85164BE77538EE6AEC29B151 /* Sources */,
+				E6ACE6A5168BBC7D60214817DF542B63 /* Frameworks */,
+				15C65DB605F54AD2C66DC71791F1D573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93F4A6EF1AAA919A28667CB65FBBB65 /* PBXTargetDependency */,
+			);
+			name = "Pods-AGS300-iOS-DemoTests";
+			productName = "Pods-AGS300-iOS-DemoTests";
+			productReference = 4AEFA57252BD19CEE2884986BC9D0535 /* Pods_AGS300_iOS_DemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F324573329120F52BFD49392D78B4464 /* ACPCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B40473295C1750C35C231D14500680A /* Build configuration list for PBXNativeTarget "ACPCore" */;
+			buildPhases = (
+				B6A3F7C0895F1FDC043B145CD4361243 /* Headers */,
+				7A9842CB83A1D862E3F3BBEABBC9F647 /* Sources */,
+				C4B252DA24C0E1D3F5715B948E2D0748 /* Frameworks */,
+				EE39F718BC092DC5A329862BB641BE9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACPCore;
+			productName = ACPCore;
+			productReference = 165E3A681B5DAE24C47B2B834D67ADC2 /* ACPCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AA7EA4C300AFCF57EA0E4784ACDF7977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69FC0E0E62CDDB545E49479C73D8481 /* ACPAnalytics */,
+				335D63DDF3EC5CE53EDDB1C4BCD708E7 /* ACPAudience */,
+				F324573329120F52BFD49392D78B4464 /* ACPCore */,
+				08A9EDC37A53E5D39F64F6B61A7D5E5C /* ACPGriffon */,
+				564CD9B7C0D3BB56A415103869AA44CF /* ACPMobileServices */,
+				025D1400BFE904CEE95BE7522D3CBBE7 /* ACPPlaces */,
+				03191BF87896CA77B8CA344A5F31DE2E /* ACPPlacesMonitor */,
+				9CF0B134E9BEA98C9F171CF7199FD64B /* ACPTarget */,
+				4CAB23789210D705E4F2F59BF4CC77B2 /* ACPUserProfile */,
+				840CB4A51D058ACB3AEE61CE43330E9F /* Pods-AGS300-iOS-Demo */,
+				E2D9DD30225292207D6EE79BB4C28FD6 /* Pods-AGS300-iOS-DemoTests */,
+				DD33D78777F0684379B25D755E194376 /* Pods-AGS300-iOS-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0AA2D9D40DD0E290CCD268E1411CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C65DB605F54AD2C66DC71791F1D573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5F6CD2EB5EC82DCAFFADA1B49F1D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5911859282C5EA1C6C00867AF06087C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8482DEFC83189AD188FD3C20782353AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F4546F823E0A49C4AE7B85F9611124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB028C4990F199BEFE6EEEA6A2FB6BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2EEF7B75C27ADD6438F13706114100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D00C26299DAC11658BCEB6B9E8FC94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DFE5610392B4D91018E4D46A436401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E431E46173F7F3F6848BC3CEFAF63E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE39F718BC092DC5A329862BB641BE9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0671CE0DC0D1D9F1B29BEEC2955137E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF57C16607747679D92219FD74DB221E /* ACPTarget-dummy.m in Sources */,
+				2C25B658773A6ED0D5EB1BA4D8EEB405 /* empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4047CC60A1593859FB60F27DAD0CF5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596D6667A48A12831D6F173B526F00EB /* Pods-AGS300-iOS-DemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425A8109F4C83AD0469F1DEB82FD8312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704D8353FFD25E7F2BB47E83BE29FE90 /* ACPGriffon-dummy.m in Sources */,
+				302B24AD85CBA6BD08822B16AFD108D9 /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FFEAD2D85164BE77538EE6AEC29B151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2959E89C180CF7628689F740478565 /* Pods-AGS300-iOS-DemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A9842CB83A1D862E3F3BBEABBC9F647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DF35FC4AAD46D1A911642CD85DC68C /* ACPCore-dummy.m in Sources */,
+				BDC11300DBFD0300BDC208890486BA65 /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F1C97C0EAE6E21BAB031550AB841F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0510EEF1926AF424010A8D5475170645 /* ACPAnalytics-dummy.m in Sources */,
+				7EE9E642B9E20160629F48D42124937F /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA03E24C9688B211FB3B1473049280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6FA265C3D5EFEA4789067D2102A67D /* ACPMobileServices-dummy.m in Sources */,
+				C19E55EED0D53907328BE8CB846F6235 /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8171BB84DDCF993DB5218AD22AB83F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116C6672613C240BC2A44A1BAD34B164 /* ACPPlaces-dummy.m in Sources */,
+				B4EB5F9677950D0CC55981ECE3EFB105 /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E329F556B6A29681CD77484FDEA85B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBCD13E0AD99F3290E22525D976883A /* Pods-AGS300-iOS-Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E941546BE42BFF4BA584CE6ABE68797A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06505E29FA4671B21BA3E17DE023A6CA /* ACPUserProfile-dummy.m in Sources */,
+				49C4C057EE91E3908450E7394CA53515 /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47D680B9F8C43CAE8002CF30625F237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04358649A7F948E6BA7354C38BFE3DA0 /* ACPAudience-dummy.m in Sources */,
+				87C4A6EC0CA5E4A01E9EAB49D738CE39 /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FA39E5EEC7FCE26E12FC9C55BA3741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EB46520E77F6529A9C9E85D674E866 /* ACPPlacesMonitor-dummy.m in Sources */,
+				62D9BE5431EC2CAA248E82BA46B2DA50 /* ACPPlacesMonitor.m in Sources */,
+				F2ABCC61D4E1445575AEAEAB7553D01B /* ACPPlacesMonitorConstants.m in Sources */,
+				DC06E2E8A4EF81B79FBACE64357D55B7 /* ACPPlacesMonitorInternal.m in Sources */,
+				DAAE4E2085CD644CF22D118C5FFB0652 /* ACPPlacesMonitorListener.m in Sources */,
+				28B348DEDDE1D66DEA731829AF627FC0 /* ACPPlacesMonitorLocationDelegate.m in Sources */,
+				D65C957D8F2714DC90EEC838FC706CD9 /* ACPPlacesQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0500B182F765C4FCA4188FD44D145FC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 116ADDB4513B50EA08BD85A8A3E53821 /* PBXContainerItemProxy */;
+		};
+		1D11EB01E456421ED43B15FE05FEFD23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPAnalytics;
+			target = B69FC0E0E62CDDB545E49479C73D8481 /* ACPAnalytics */;
+			targetProxy = 6B68CC137ED69E08DCC478AF7ED11E5F /* PBXContainerItemProxy */;
+		};
+		2DBBFEA32EFF809DADBD881B414CCEAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 47D4A10867D357C909845F51ED72E3B2 /* PBXContainerItemProxy */;
+		};
+		2ED44F5A9F0C5060029F21C69CCC5C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPPlaces;
+			target = 025D1400BFE904CEE95BE7522D3CBBE7 /* ACPPlaces */;
+			targetProxy = 76425111BC61E1A9DB2F23E52DE1968F /* PBXContainerItemProxy */;
+		};
+		368F5102A24976B44CA89C2B096FB4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 37BA955545741575A16D8CB7C87F36EC /* PBXContainerItemProxy */;
+		};
+		55AA6C88E85635DCCFE9F6CA9D71C51C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPPlaces;
+			target = 025D1400BFE904CEE95BE7522D3CBBE7 /* ACPPlaces */;
+			targetProxy = 76D7EE9CBA71B07542EE954BEF93D24D /* PBXContainerItemProxy */;
+		};
+		63B04E8B2AC2774E57271F038CF94788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = F23A53DFD4EF166B98317D1B463F2454 /* PBXContainerItemProxy */;
+		};
+		74114DC0DB794615FE7C85281985D695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = FFF69918F3D6AFF17824C6AB350BC462 /* PBXContainerItemProxy */;
+		};
+		77970408E240607C36832CECB89B72ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPMobileServices;
+			target = 564CD9B7C0D3BB56A415103869AA44CF /* ACPMobileServices */;
+			targetProxy = 9C7D65D89FECC32F83BB6FC8E66E382D /* PBXContainerItemProxy */;
+		};
+		788A35E7C45FD9E790AEDC776A705B5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 40E125BFA7D361C6D5A6FD491B9561CB /* PBXContainerItemProxy */;
+		};
+		78CF5760718E0D7DFCBD6287CAF103C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 87FCE963B7C5B3DA5EB0433DB10A5816 /* PBXContainerItemProxy */;
+		};
+		89AF7E5840467F0B44EA49757B58DE64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 254431FEF876B4D403C2A825BCF54D24 /* PBXContainerItemProxy */;
+		};
+		8AC60D81FECF7A8218DB6E637D4B41F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AGS300-iOS-Demo";
+			target = 840CB4A51D058ACB3AEE61CE43330E9F /* Pods-AGS300-iOS-Demo */;
+			targetProxy = 279258B4EC938EAF668F4981F69D3F81 /* PBXContainerItemProxy */;
+		};
+		BCA89B10A3971B0DDEC5DBA8BF46E90F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPAudience;
+			target = 335D63DDF3EC5CE53EDDB1C4BCD708E7 /* ACPAudience */;
+			targetProxy = C63FF26C13D4ED115C06312E8B3C21FB /* PBXContainerItemProxy */;
+		};
+		C071C7F255B6309A09A5F847235D12F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPUserProfile;
+			target = 4CAB23789210D705E4F2F59BF4CC77B2 /* ACPUserProfile */;
+			targetProxy = 567F88423701474830DB9AB0EC9BD38F /* PBXContainerItemProxy */;
+		};
+		CD68B158338FC2256F455D24AEF86AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPPlacesMonitor;
+			target = 03191BF87896CA77B8CA344A5F31DE2E /* ACPPlacesMonitor */;
+			targetProxy = 075FBF34FC7E4531418C41C9DDF3944B /* PBXContainerItemProxy */;
+		};
+		D8D4013F63574527D16C130825E12640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPTarget;
+			target = 9CF0B134E9BEA98C9F171CF7199FD64B /* ACPTarget */;
+			targetProxy = E0C10D1B4A4EAEA3D1ACAEC5C8A7A159 /* PBXContainerItemProxy */;
+		};
+		D93F4A6EF1AAA919A28667CB65FBBB65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AGS300-iOS-Demo";
+			target = 840CB4A51D058ACB3AEE61CE43330E9F /* Pods-AGS300-iOS-Demo */;
+			targetProxy = B3629546F2F494E9F05BCBBB1BEC89D4 /* PBXContainerItemProxy */;
+		};
+		DC0EC874E06E44F2CCB8306D6DAF967D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPGriffon;
+			target = 08A9EDC37A53E5D39F64F6B61A7D5E5C /* ACPGriffon */;
+			targetProxy = 5BA5584519D1409A050E63D5CDA9E994 /* PBXContainerItemProxy */;
+		};
+		E7F5B31750D20B1CD602AEBD36FD52F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPAnalytics;
+			target = B69FC0E0E62CDDB545E49479C73D8481 /* ACPAnalytics */;
+			targetProxy = 3751192B7E2DBDF1589373FB06FC6A12 /* PBXContainerItemProxy */;
+		};
+		F7A2DB8231533D79D8BC482E342F61DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = F324573329120F52BFD49392D78B4464 /* ACPCore */;
+			targetProxy = 3645DB76AB9DE17F19CC6FCCEAC3409A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		014D480705F0A7F30BE69DC6E452E907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1B60B04F3BDFB7B35DAA718930BAA5 /* ACPPlacesMonitor.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPPlacesMonitor/ACPPlacesMonitor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPPlacesMonitor/ACPPlacesMonitor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPPlacesMonitor/ACPPlacesMonitor.modulemap";
+				PRODUCT_MODULE_NAME = ACPPlacesMonitor;
+				PRODUCT_NAME = ACPPlacesMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0757107503E846F5A2B68E19277FD6E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4D75505D552FCA48FE7381F5BAD161 /* Pods-AGS300-iOS-DemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AGS300-iOS-DemoUITests/Pods-AGS300-iOS-DemoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGS300-iOS-DemoUITests/Pods-AGS300-iOS-DemoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		099B6465B84D51F36E7EFD9FA6CCE3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EDE774BE37130E330CB4CCC0145154D /* ACPTarget.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPTarget/ACPTarget-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPTarget/ACPTarget-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPTarget/ACPTarget.modulemap";
+				PRODUCT_MODULE_NAME = ACPTarget;
+				PRODUCT_NAME = ACPTarget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CB4F621BEBF656309D499009FE4CAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CDD1CF09C1FC6D62669AA9C0783609 /* Pods-AGS300-iOS-DemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AGS300-iOS-DemoUITests/Pods-AGS300-iOS-DemoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGS300-iOS-DemoUITests/Pods-AGS300-iOS-DemoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F4556E2C75EADC161C1ADF44CA02F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E520A0BF00D4E026A28322D3BB444E /* ACPTarget.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPTarget/ACPTarget-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPTarget/ACPTarget-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPTarget/ACPTarget.modulemap";
+				PRODUCT_MODULE_NAME = ACPTarget;
+				PRODUCT_NAME = ACPTarget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23CADC1C2501D44984F1B76884EA27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8580FB6D4F083C08097707612365EC7 /* Pods-AGS300-iOS-Demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AGS300-iOS-Demo/Pods-AGS300-iOS-Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGS300-iOS-Demo/Pods-AGS300-iOS-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34BA5E5F8FC311025FB5EC5583ADEB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B7F559328CAAF2AE4BF69BF0C3BEEB /* ACPUserProfile.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPUserProfile/ACPUserProfile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPUserProfile/ACPUserProfile-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPUserProfile/ACPUserProfile.modulemap";
+				PRODUCT_MODULE_NAME = ACPUserProfile;
+				PRODUCT_NAME = ACPUserProfile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A3D907A99040473819D145AD1A8EE55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5752A4F15F0B592DB5E68726BBA6BC0 /* ACPGriffon.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPGriffon/ACPGriffon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPGriffon/ACPGriffon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPGriffon/ACPGriffon.modulemap";
+				PRODUCT_MODULE_NAME = ACPGriffon;
+				PRODUCT_NAME = ACPGriffon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CE23A7D480892FA5D0E68C6C2C4EF66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADD3131D0EE6B25D08960987642C556 /* ACPAnalytics.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPAnalytics/ACPAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPAnalytics/ACPAnalytics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPAnalytics/ACPAnalytics.modulemap";
+				PRODUCT_MODULE_NAME = ACPAnalytics;
+				PRODUCT_NAME = ACPAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41D00AB4A196FE14E52074AFFBF613E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61DAADB4243B77FD802E7EDECB7C4C2 /* Pods-AGS300-iOS-DemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AGS300-iOS-DemoTests/Pods-AGS300-iOS-DemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGS300-iOS-DemoTests/Pods-AGS300-iOS-DemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53CA0FF189C7AD36B1FDF4B73BFF973C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8071CF42D2E4BF0BD648902B7ED33C0 /* ACPCore.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPCore/ACPCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPCore/ACPCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPCore/ACPCore.modulemap";
+				PRODUCT_MODULE_NAME = ACPCore;
+				PRODUCT_NAME = ACPCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		95A2F576C0A215582EE5D31A3082389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B592656B9A6249B4234CB7AB57988EB /* ACPPlacesMonitor.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPPlacesMonitor/ACPPlacesMonitor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPPlacesMonitor/ACPPlacesMonitor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPPlacesMonitor/ACPPlacesMonitor.modulemap";
+				PRODUCT_MODULE_NAME = ACPPlacesMonitor;
+				PRODUCT_NAME = ACPPlacesMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B1D9F67685872ABC7D3D429CC922837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94F2F42650D0E77DE25601B8483725D /* ACPAudience.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPAudience/ACPAudience-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPAudience/ACPAudience-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPAudience/ACPAudience.modulemap";
+				PRODUCT_MODULE_NAME = ACPAudience;
+				PRODUCT_NAME = ACPAudience;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A657FFF04A8DC07A831057CB7D82F816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE3EDD25D6ADE80DBF9F5BC7A21ACB1E /* ACPCore.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPCore/ACPCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPCore/ACPCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPCore/ACPCore.modulemap";
+				PRODUCT_MODULE_NAME = ACPCore;
+				PRODUCT_NAME = ACPCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A66E38E88F534CA652CBDF64FE76122A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0580C90019FFAB0A8B253469F5C6F664 /* ACPGriffon.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPGriffon/ACPGriffon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPGriffon/ACPGriffon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPGriffon/ACPGriffon.modulemap";
+				PRODUCT_MODULE_NAME = ACPGriffon;
+				PRODUCT_NAME = ACPGriffon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF76981BF39DA2A39476B8941095A4B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B27BC5B3DEE4C53EA8C66D20A6E0F0B /* ACPUserProfile.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPUserProfile/ACPUserProfile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPUserProfile/ACPUserProfile-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPUserProfile/ACPUserProfile.modulemap";
+				PRODUCT_MODULE_NAME = ACPUserProfile;
+				PRODUCT_NAME = ACPUserProfile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BF732F61DD52AE5BDD0B1F2FA04FBB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D680ED3677B17E65DBF66D542F35E1 /* ACPPlaces.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPPlaces/ACPPlaces-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPPlaces/ACPPlaces-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPPlaces/ACPPlaces.modulemap";
+				PRODUCT_MODULE_NAME = ACPPlaces;
+				PRODUCT_NAME = ACPPlaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4B79DA7A4510DE7564D8FF5B07B0FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D7A052EF69DF252505DAAFFAD440C0 /* ACPMobileServices.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPMobileServices/ACPMobileServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPMobileServices/ACPMobileServices-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPMobileServices/ACPMobileServices.modulemap";
+				PRODUCT_MODULE_NAME = ACPMobileServices;
+				PRODUCT_NAME = ACPMobileServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAC90C4789F3408D4B3A9B8F2B95E7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33499B182346937CBFBDD565DCDC77FD /* ACPPlaces.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPPlaces/ACPPlaces-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPPlaces/ACPPlaces-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPPlaces/ACPPlaces.modulemap";
+				PRODUCT_MODULE_NAME = ACPPlaces;
+				PRODUCT_NAME = ACPPlaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D62736248693B55FAB15F3179454EC58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C51A3E763FA74E81D3E4587600532F /* Pods-AGS300-iOS-DemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AGS300-iOS-DemoTests/Pods-AGS300-iOS-DemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGS300-iOS-DemoTests/Pods-AGS300-iOS-DemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8270C1E03853BD3EC55422272E8BBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8AB9D8F507F90DB00D7FF6C9A34A42 /* Pods-AGS300-iOS-Demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AGS300-iOS-Demo/Pods-AGS300-iOS-Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGS300-iOS-Demo/Pods-AGS300-iOS-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB7107BA7C2A6BE0F4E01DE4DB3E7C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E931DC34FA8ACEA6D8640EF795DBE1 /* ACPAudience.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPAudience/ACPAudience-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPAudience/ACPAudience-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPAudience/ACPAudience.modulemap";
+				PRODUCT_MODULE_NAME = ACPAudience;
+				PRODUCT_NAME = ACPAudience;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E01396056EAA1191075E97E3933FD9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B501FAEF73AD82E6A7E68B12B23C8B0A /* ACPAnalytics.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPAnalytics/ACPAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPAnalytics/ACPAnalytics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPAnalytics/ACPAnalytics.modulemap";
+				PRODUCT_MODULE_NAME = ACPAnalytics;
+				PRODUCT_NAME = ACPAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E952D0C2D20EC7048C32419F0E951CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB3C0BB7BCAC0655D28D7E5369C9926 /* ACPMobileServices.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPMobileServices/ACPMobileServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPMobileServices/ACPMobileServices-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPMobileServices/ACPMobileServices.modulemap";
+				PRODUCT_MODULE_NAME = ACPMobileServices;
+				PRODUCT_NAME = ACPMobileServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B7A575ECF697B0D1E1E17CBEE3663FD /* Build configuration list for PBXNativeTarget "ACPAudience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B1D9F67685872ABC7D3D429CC922837 /* Debug */,
+				DB7107BA7C2A6BE0F4E01DE4DB3E7C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27392883F221239C5E7250E80CFA47F2 /* Build configuration list for PBXNativeTarget "ACPMobileServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B79DA7A4510DE7564D8FF5B07B0FDD /* Debug */,
+				E952D0C2D20EC7048C32419F0E951CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F827709B6BE6D637CF17BD92B09B342 /* Build configuration list for PBXNativeTarget "Pods-AGS300-iOS-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D00AB4A196FE14E52074AFFBF613E9 /* Debug */,
+				D62736248693B55FAB15F3179454EC58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327F6370E2C3446CCAEDD0CC3AE2DCD8 /* Build configuration list for PBXNativeTarget "ACPPlacesMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014D480705F0A7F30BE69DC6E452E907 /* Debug */,
+				95A2F576C0A215582EE5D31A3082389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477A4ECE2766408D6BA33702EF9B156E /* Build configuration list for PBXNativeTarget "Pods-AGS300-iOS-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB4F621BEBF656309D499009FE4CAF1 /* Debug */,
+				0757107503E846F5A2B68E19277FD6E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B40473295C1750C35C231D14500680A /* Build configuration list for PBXNativeTarget "ACPCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A657FFF04A8DC07A831057CB7D82F816 /* Debug */,
+				53CA0FF189C7AD36B1FDF4B73BFF973C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB37277B1D7377E42482D171A00CF19 /* Build configuration list for PBXNativeTarget "Pods-AGS300-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8270C1E03853BD3EC55422272E8BBED /* Debug */,
+				23CADC1C2501D44984F1B76884EA27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9302E5ADD810B423A6635603CA3C4784 /* Build configuration list for PBXNativeTarget "ACPUserProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF76981BF39DA2A39476B8941095A4B6 /* Debug */,
+				34BA5E5F8FC311025FB5EC5583ADEB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B73B7121B7A5817A6DE667F7EB2F885D /* Build configuration list for PBXNativeTarget "ACPPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF732F61DD52AE5BDD0B1F2FA04FBB83 /* Debug */,
+				CAC90C4789F3408D4B3A9B8F2B95E7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0720C82940FE3B86CD7DEBF8DC05AE /* Build configuration list for PBXNativeTarget "ACPAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE23A7D480892FA5D0E68C6C2C4EF66 /* Debug */,
+				E01396056EAA1191075E97E3933FD9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB21DAC98C82B1AFD244D04DF13C9AE5 /* Build configuration list for PBXNativeTarget "ACPGriffon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3D907A99040473819D145AD1A8EE55 /* Debug */,
+				A66E38E88F534CA652CBDF64FE76122A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD8B3107C005EF1A7520010CA48AD545 /* Build configuration list for PBXNativeTarget "ACPTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4556E2C75EADC161C1ADF44CA02F93 /* Debug */,
+				099B6465B84D51F36E7EFD9FA6CCE3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module ACPMobileServices {
+  umbrella header "ACPMobileServices-umbrella.h"
+
+  export *
+  module * { export * }
+}

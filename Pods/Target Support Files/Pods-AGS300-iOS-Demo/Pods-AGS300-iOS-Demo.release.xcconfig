@@ -1,0 +1,12 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ACPAnalytics" "${PODS_CONFIGURATION_BUILD_DIR}/ACPAudience" "${PODS_CONFIGURATION_BUILD_DIR}/ACPCore" "${PODS_CONFIGURATION_BUILD_DIR}/ACPGriffon" "${PODS_CONFIGURATION_BUILD_DIR}/ACPMobileServices" "${PODS_CONFIGURATION_BUILD_DIR}/ACPPlaces" "${PODS_CONFIGURATION_BUILD_DIR}/ACPPlacesMonitor" "${PODS_CONFIGURATION_BUILD_DIR}/ACPTarget" "${PODS_CONFIGURATION_BUILD_DIR}/ACPUserProfile"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ACPAnalytics/ACPAnalytics.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPAudience/ACPAudience.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPCore/ACPCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPGriffon/ACPGriffon.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPMobileServices/ACPMobileServices.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPPlaces/ACPPlaces.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPPlacesMonitor/ACPPlacesMonitor.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPTarget/ACPTarget.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ACPUserProfile/ACPUserProfile.framework/Headers"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/ACPAnalytics" "${PODS_ROOT}/ACPAudience" "${PODS_ROOT}/ACPCore" "${PODS_ROOT}/ACPGriffon" "${PODS_ROOT}/ACPMobileServices" "${PODS_ROOT}/ACPPlaces" "${PODS_ROOT}/ACPTarget" "${PODS_ROOT}/ACPUserProfile"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ACPAnalytics_iOS" -l"ACPAudience_iOS" -l"ACPCore_iOS" -l"ACPGriffon_iOS" -l"ACPIdentity_iOS" -l"ACPLifecycle_iOS" -l"ACPMobileServices_iOS" -l"ACPPlaces_iOS" -l"ACPSignal_iOS" -l"ACPTarget_iOS" -l"ACPUserProfile_iOS" -l"c++" -l"sqlite3.0" -l"z" -framework "ACPAnalytics" -framework "ACPAudience" -framework "ACPCore" -framework "ACPGriffon" -framework "ACPMobileServices" -framework "ACPPlaces" -framework "ACPPlacesMonitor" -framework "ACPTarget" -framework "ACPUserProfile" -framework "CoreLocation" -framework "SystemConfiguration" -framework "UIKit" -framework "UserNotifications" -framework "WebKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

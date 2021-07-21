@@ -1,0 +1,6 @@
+framework module ACPPlaces {
+  umbrella header "ACPPlaces-umbrella.h"
+
+  export *
+  module * { export * }
+}

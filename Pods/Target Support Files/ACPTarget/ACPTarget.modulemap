@@ -1,0 +1,6 @@
+framework module ACPTarget {
+  umbrella header "ACPTarget-umbrella.h"
+
+  export *
+  module * { export * }
+}

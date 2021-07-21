@@ -35,9 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // AEP SDK config:
         ACPCore.setLogLevel(.debug)
         ACPCore.configure(withAppId: "launch-EN8ed0d2fc361c483f8705bb4d0d612a39-development") // AGS300 dev
-        //ACPCore.configure(withAppId: "633870858fb6/43a1204b4c00/launch-90420bf7c8b6-development") // THD Demo
-        //ACPCore.configure(withAppId: "913fc44e579c/75393ae8780f/launch-5bd588d56cb6-staging")// tractor supply
-                
+             
         // AEP SDK extension registration:
         ACPGriffon.registerExtension()
         ACPPlacesMonitor.registerExtension()

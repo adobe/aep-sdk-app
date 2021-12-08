@@ -9,6 +9,7 @@
 import Foundation
 import ACPTarget
 import ACPCore
+import WebKit
 
 enum PageName {
     case GlobalPage
@@ -169,8 +170,8 @@ struct AEPSDKManager {
         let _ : [String: String] = ["customerID":"781456718571634714756",
                                               "anotherID":"907862348792346"];
         
-        let identifiers : [String: String] = ["H0med3p0t2":"051b13056dee1d200s",
-                                              "H0med3p0t4":"HHH0660000000629759",
+        let identifiers : [String: String] = ["guid":"051b13056dee1d200s",
+                                              "hhid":"HHH0660000000629759",
                                               /*"svocid":"051b13056dee1d200s",
                                               "b2b":"051b13056dee1d200s"*/];
         
@@ -182,7 +183,158 @@ struct AEPSDKManager {
     static func clearIdentifiersAfterUserLogout(){
         userMembershipLevel = ""
     }
+    
 }
 
+// MARK:  Getting Target Identifiers
 
+extension AEPSDKManager {
 
+    /// Start collecting Customer ID (GUID), ECID, tntId, sessionId in the same order or read them from cache
+    static func collectTargetIdentifiers (){
+        
+        //ACPTarget.resetExperience()
+        
+        let startTime = CFAbsoluteTimeGetCurrent()
+        
+        print("AT-ID-EXT: from NSHomeDirectory() \(NSHomeDirectory())")
+        for (key, value) in UserDefaults.standard.dictionaryRepresentation() {
+            print("AT-ID-EXT Key \(key): \(value) \n")
+        }
+        
+        // Step 0: make sure identifiers (your Customer ID, GUID) are synced before running the below
+        AEPSDKManager.setIdentifiersAfterUserAuthentication()
+        
+        // Step 1: get any synced identifiers first since it is a primary Target ID when visitor is authenticated
+        ACPIdentity.getIdentifiersWithCompletionHandler { (retrievedVisitorIds, error) in
+            
+            let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+            
+            // Attempt to read ECID, tntId, sessionId from cache
+            var availableIdentifiers = tryReadingIdentifersFromCache()
+            
+            if let error = error {
+                print("AT-ID-EXT: ACPCore.getIdentifiers callback error in \(timeElapsed) s.: \(error)")
+            } else {
+                if let visitorIds = retrievedVisitorIds{
+                    for visitorId:ACPMobileVisitorId in visitorIds {
+                        if visitorId.idType == "guid" {
+                            print("AT-ID-EXT: ACPCore.getIdentifiers callback in \(timeElapsed) s.: \(String(describing: visitorId.idType))  \(String(describing: visitorId.identifier) )")
+                            availableIdentifiers["thirdPartyId"] = visitorId.identifier
+                        }
+                    }
+                }else{
+                    print("AT-ID-EXT: No identifiers synced")
+                }
+            }
+            // Next step is to collect ECID
+            collectExpereinceCloudId(identifiers: availableIdentifiers, startTime: startTime)
+        }
+
+    }
+    
+    /// Attempts to read ECID, tntId and sessionId from cache. This method is not recommended unless guided by Adobe Consultants
+    static func tryReadingIdentifersFromCache () -> [String:String] {
+        var result = [String:String]()
+        if let sessionId = UserDefaults.standard.string(forKey: "Adobe.ADOBEMOBILE_TARGET.SESSION_ID") {
+            result["sessionId"] = sessionId
+        }
+        if let tntId = UserDefaults.standard.string(forKey: "Adobe.ADOBEMOBILE_TARGET.TNT_ID") {
+            result["tntId"] = tntId
+        }
+        if let ecid = UserDefaults.standard.string(forKey: "Adobe.visitorIDServiceDataStore.ADOBEMOBILE_PERSISTED_MID") {
+            result["marketingCloudVisitorId"] = ecid
+        }
+        print("AT-ID-EXT: tryReadingIdentifersFromCache: \(result)")
+        return result
+    }
+    
+    /// Collects ECID (Marketing Cloud ID or Visitor ID) if needed, then moves on to collect tntId
+    static func collectExpereinceCloudId (identifiers:[String:String], startTime:CFAbsoluteTime) {
+        // Step 2: get ECID
+        var result = identifiers
+        if identifiers["marketingCloudVisitorId"] == nil {
+            ACPIdentity.getExperienceCloudId { (ecid, error) in
+                let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+                if let error = error {
+                    print("AT-ID-EXT: ACPCore.getExperienceCloudId callback in \(timeElapsed) s.; error: \(error)")
+                } else {
+                    print("AT-ID-EXT: ACPCore.getExperienceCloudId callback in \(timeElapsed) s.: \(String(describing: ecid))")
+                    result["marketingCloudVisitorId"] = ecid
+                }
+                collectTntId(identifiers: result, startTime: startTime)
+            }
+        }else{
+            collectTntId(identifiers: result, startTime: startTime)
+        }
+    }
+    
+    /// Collects tntId if needed, then moves on to post identifiers
+    static func collectTntId (identifiers:[String:String], startTime:CFAbsoluteTime){
+        // Step 3: get tntId
+        var result = identifiers
+        if identifiers["tntId"] == nil {
+            // Get TNT ID with
+            ACPTarget.getTntId({ tntId in
+                let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+                print("AT-ID-EXT: ACPTarget.getTntId callback in \(timeElapsed) s.: \(String(describing: tntId))")
+                result["tntId"] = tntId
+                postTargetIdentifiers(identifiers: result, startTime: startTime)
+            })
+        }else{
+            postTargetIdentifiers(identifiers: result, startTime: startTime)
+        }
+    }
+    
+    /// Posts all collected Target identifiers to the subscribers
+    static func postTargetIdentifiers(identifiers:[String:String], startTime:CFAbsoluteTime){
+        // Step 4: get session ID if still missing
+        var result = identifiers
+        if identifiers["sessionId"] == nil, let sessionId = UserDefaults.standard.string(forKey: "Adobe.ADOBEMOBILE_TARGET.SESSION_ID") {
+            result["sessionId"] = sessionId
+        }
+        let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+        print("AT-ID-EXT: postTargetIdentifiers [\(timeElapsed) seconds]: \(result)")
+        
+        // Step 5: post all identifiers
+        NotificationCenter.default.post(name: Notification.Name("postTargetIdentifiers"), object: result)
+    }
+}
+
+/**
+ WKWebView extension extends Adobe Identifiers syncing between native and web views
+ Author: Adobe Consulting, ustymenk@adobe.com
+ */
+extension WKWebView {
+    /**
+     Passes ECID (marketingCloudId), tntId and sessionId
+     from the Native app into the Web View in order to sync visitors in the hybrid app
+     Requirements: must be executed before webView.load method in order to execute Adobe related JavaScript for cookie saving
+     Example:
+        self.webView.syncAdobeIdentifiersBeforeWebViewLoad(webview: self.webView)
+        self.webView.load(request as URLRequest)
+     */
+    func syncAdobeIdentifiersBeforeWebViewLoad (webview: WKWebView) {
+        /// JavaScript that defined functions for cookie saving and expiration
+        var jsCode = "function setAdobeCookie(cname,cvalue,exdays){const d=new Date();d.setTime(d.getTime()+(exdays*24*60*60*1000));let expires='expires='+ d.toUTCString();document.cookie=cname+'='+cvalue+';'/* +expires+';path=/'; */ };function getAdobeExpiry(addSec){return parseInt((new Date().getTime()/1000).toFixed(0))+addSec};"
+        /// Try reading ECID from app's cache and wrap around JS code to save to "s_ecid" cookies
+        if let ecid = UserDefaults.standard.string(forKey: "Adobe.visitorIDServiceDataStore.ADOBEMOBILE_PERSISTED_MID") {
+            let ecidCookie = "setAdobeCookie('s_ecid','MCMID|\(ecid)',(365*2));"
+            jsCode = jsCode + ecidCookie
+        }
+        /// Try reading sessionId and tntId from app's cache and wrap around JS code to save to "mbox" cookies
+        if let sessionId = UserDefaults.standard.string(forKey: "Adobe.ADOBEMOBILE_TARGET.SESSION_ID"),
+           let tntId = UserDefaults.standard.string(forKey: "Adobe.ADOBEMOBILE_TARGET.TNT_ID"),
+           sessionId.count > 0, tntId.count > 0{
+            let mboxCookie = "setAdobeCookie('mbox','session#\(sessionId)#'+getAdobeExpiry(60*30)+'|PC#\(tntId)#'+getAdobeExpiry(60*60*24*365),(365*2));"
+            jsCode = jsCode + mboxCookie
+        }
+        print("JS code to be executed in the web view: \(jsCode)")
+        /// Inject code before Document start to save all cookies into the web view
+        let cookieScript = WKUserScript(source: jsCode,
+                                            injectionTime: .atDocumentStart,
+                                            forMainFrameOnly: false)
+        /// Execute script within configuration
+        webview.configuration.userContentController.addUserScript(cookieScript)
+    }
+}

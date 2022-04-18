@@ -8,7 +8,7 @@
 
 import UIKit
 
-// AEP SDKs imports:
+// AEP SDK imports:
 import ACPAnalytics
 import ACPTarget
 import ACPCore
@@ -32,12 +32,7 @@ class ViewController: UIViewController, NSURLConnectionDelegate {
         print("in viewDidLoad")
         self.title = "Home"
         
-        print("NSHomeDirectory() \(NSHomeDirectory())")
-        for (key, value) in UserDefaults.standard.dictionaryRepresentation() {
-            print("Key \(key) = \(value) \n")
-        }
         
-        print("My Target Session ID is \(UserDefaults.standard.object(forKey: "Adobe.ADOBEMOBILE_TARGET.SESSION_ID") ?? "UNKNOWN")")
         
 //        ACPTarget.getTntId({ (id) in
 //            print("ACPTarget.getTntId \(String(describing: id))")
@@ -143,6 +138,8 @@ class ViewController: UIViewController, NSURLConnectionDelegate {
 
 // MARK: Target Implementation
 
+// AEP SDK Displaying Target Offers
+
 extension ViewController{
     
     // Pre-hides personalized content
@@ -155,57 +152,50 @@ extension ViewController{
         }
     }
     
+    /**
+     * Applies Target Offers that were prefetched on app entry; triggers Notifications calls for prefetched content
+     * Note: if prefetched content failed to load due to offline mode, then this will trigger an Execute call
+     */
     @objc func applyTargetOffers(){
         
-        // Handle prefetched content
-        if AEPSDKManager.isContentPrefetched == true {
+        // You could safely check here for AEPSDKManager.isContentPrefetched == true
+        // however, if Prefetch call failed - the below will trigger an Execute call instead
             
-            // Change banner
-            AEPSDKManager.getPrefetchedLocation(forKey: .HomePage, location: "sdk-demo-1") { (content) in
-                print("prefetched content (sdk-demo-1) \(String(describing: content))")
-                if let image = AEPSDKManager.getJsonValueFromTargetOffer(key: "image", response: content) {
-                    DispatchQueue.main.async {
-                        switch image{
-                            case "adobe": self.homeImage?.image = UIImage(named: "adobe")
-                            case "iphone": self.homeImage?.image = UIImage(named: "iphone")
-                            case "galaxy": self.homeImage?.image = UIImage(named: "galaxy")
-                            default: print ("showing default image because response is: \(image)")
-                        }
-                        self.homeImage?.alpha = 1 // reveal pre-hidden personalized content
+        // Change banner
+        AEPSDKManager.getPrefetchedLocation(forKey: .HomePage, location: "sdk-demo-1") { (content) in
+            print("prefetched content (sdk-demo-1) \(String(describing: content))")
+            if let image = AEPSDKManager.getJsonValueFromTargetOffer(key: "image", response: content) {
+                DispatchQueue.main.async {
+                    switch image{
+                        case "adobe": self.homeImage?.image = UIImage(named: "adobe")
+                        case "iphone": self.homeImage?.image = UIImage(named: "iphone")
+                        case "galaxy": self.homeImage?.image = UIImage(named: "galaxy")
+                        default: print ("showing default image because response is: \(image)")
                     }
-                }else{
-                    DispatchQueue.main.async {
-                        self.homeImage?.alpha = 1
-                    }
+                    self.homeImage?.alpha = 1 // reveal pre-hidden personalized content
+                }
+            }else{
+                DispatchQueue.main.async {
+                    self.homeImage?.alpha = 1
                 }
             }
+        }
             
-            // Change message on Home page
-            AEPSDKManager.getPrefetchedLocation(forKey: .HomePage, location: "sdk-demo-2") { (content) in
-                print("prefetched content (sdk-demo-2) \(String(describing: content))")
-                if let message = AEPSDKManager.getJsonValueFromTargetOffer(key: "message", response: content),
-                    message.count > 0 {
-                        print("prefetched message \(message)")
-                        DispatchQueue.main.async {
-                            self.messageLabel.text = message
-                            self.messageLabel?.alpha = 1
-                        }
-                }else{
+        // Change message on Home page
+        AEPSDKManager.getPrefetchedLocation(forKey: .HomePage, location: "sdk-demo-2") { (content) in
+            print("prefetched content (sdk-demo-2) \(String(describing: content))")
+            if let message = AEPSDKManager.getJsonValueFromTargetOffer(key: "message", response: content),
+                message.count > 0 {
+                    print("prefetched message \(message)")
                     DispatchQueue.main.async {
-                        self.messageLabel?.alpha = 1 // reveal pre-hidden personalized content
+                        self.messageLabel.text = message
+                        self.messageLabel?.alpha = 1
                     }
+            }else{
+                DispatchQueue.main.async {
+                    self.messageLabel?.alpha = 1 // reveal pre-hidden personalized content
                 }
             }
-            
-            
-            DispatchQueue.main.async {
-                
-                
-            }
-            
-        // Content unavailable - ensure notifications are listening for response from Target
-        }else{
-            print("no prefetched content found yet")
         }
 
     }

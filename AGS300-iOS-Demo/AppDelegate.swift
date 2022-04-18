@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -34,8 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // AEP SDK config:
         ACPCore.setLogLevel(.debug)
-        ACPCore.configure(withAppId: "launch-EN8ed0d2fc361c483f8705bb4d0d612a39-development") // AGS300 dev
-             
+        let launchIds = [
+            "launch-EN8ed0d2fc361c483f8705bb4d0d612a39-development"
+        ]
+        ACPCore.configure(withAppId: launchIds[0])
+                
         // AEP SDK extension registration:
         ACPGriffon.registerExtension()
         ACPPlacesMonitor.registerExtension()
@@ -53,21 +55,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //Indicates how long, in seconds, Places membership information for the device will remain valid. Default value of 3600 (seconds in an hour).
             ACPCore.updateConfiguration(["places.membershipttl" : 1800])
             ACPCore.updateConfiguration(["target.timeout": 5]) //cause a timeout
+            //ACPCore.updateConfiguration(["target.environmentId":5062])// Prod
+            
             
             if appState != .background {
                 
                 ACPCore.lifecycleStart(nil)
                 ACPPlacesMonitor.start()
                 
+                // for demo purposes, print Traget identifiers
+                AEPSDKManager.collectTargetIdentifiers()
+                
                 // Prefetch Target Locations on Initial App Entry
+                // Note: we will also prefetch on app re-entry, see applicationWillEnterForeground
                 AEPSDKManager.prefetchLocations()
             }
             
         }
         // see Docs https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk
-        
-        //ACPCore.configure(withAppId: "launch-EN4ffc6da8d03348f6b3deaed82adc2a15-staging") //CVS staging
-        //ACPCore.configure(withAppId: "launch-ENcd7ca0886f0f4596bcef8cf17725c940-development") //CVS dev
         
         //ACPCore.collectLaunchInfo(launchOptions ?? [:])
         

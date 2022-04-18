@@ -9,6 +9,7 @@
 import Foundation
 import ACPTarget
 import ACPCore
+import ACPUserProfile
 import WebKit
 
 enum PageName {
@@ -37,40 +38,82 @@ struct AEPSDKManager {
     static func prefetchLocations () {
         print("in prefetchLocations")
         
+        /* //Simulate Prefetch call failure
+        AEPSDKManager.isContentPrefetched = true//DELETE//
+        NotificationCenter.default.post(name: .applyTargetOffers, object: nil)//DELETE//
+        */
         
         if(AEPSDKManager.isContentPrefetched == false){
             print("prefetching...")
 
             let locationParameters:[String:String] = AEPSDKManager.getLocationParameters(forKey: PageName.GlobalPage)
             let targetParameters = ACPTargetParameters(parameters: locationParameters,
-                                                           profileParameters: nil,
-                                                           product: nil,
-                                                           order: nil)
+                                                profileParameters: nil,
+                                                          product: nil,
+                                                            order: nil)
             var prefetchArray: [ACPTargetPrefetchObject] = []
+            // Build a list of defined Locations
             for (locationsData) in locationsToPrefetch {
                 let location = locationsData["location"] as! String
                 let prefetch = ACPTargetPrefetchObject(name: location,
                                                        targetParameters: targetParameters)
                 prefetchArray.append(prefetch)
             }
-            ACPTarget.prefetchContent(prefetchArray, with: targetParameters) { (error) in
-                if error == nil {
-                    AEPSDKManager.isContentPrefetched = true
-                    print("content prefetched. notifying all subscribers")
-                    // Notify all listeners when content arrives
-                    NotificationCenter.default.post(name: .applyTargetOffers, object: nil)
-                }else{
-                    print("Target error \(String(describing: error?.localizedDescription))")
+            
+            getPrefetchLocationsFromLaunchRule { newLocations in
+                for location in newLocations  {
+                    let prefetch = ACPTargetPrefetchObject(name: location,
+                                               targetParameters: targetParameters)
+                    prefetchArray.append(prefetch)
+                }
+                
+                ACPTarget.prefetchContent(prefetchArray, with: targetParameters) { (error) in
+                    if error == nil {
+                        AEPSDKManager.isContentPrefetched = true
+                        print("content prefetched. notifying all subscribers")
+                        // Notify all listeners when content arrives
+                        NotificationCenter.default.post(name: .applyTargetOffers, object: nil)
+                    }else{
+                        print("Target error \(String(describing: error?.localizedDescription))")
+                    }
                 }
             }
+            
         }else{
             print("already prefetched")
         }
         
     }
     
+    /**
+     * Attempt to retrieve Target Locations defined in a Launch Rule
+     * This feature loading Locations from Launch helps to eliminate a new version upgrade when Locations must be added/removed
+     */
+    static func getPrefetchLocationsFromLaunchRule (completion: @escaping ([String]) -> Void){
+        var result = [String]()
+        // Attempt to retrieve Locations defined in Launch rule set as Profile attrubite
+        // It is a workaround for now to use Profile attributes as a storage. Ideally, we have a new feature for this
+        ACPUserProfile.getUserAttributes(["TargetLocations"]) { attributes, error in
+            if error != nil {
+                print("getPrefetchLocationsFromLaunchRule error \(String(describing: error?.localizedDescription))")
+                completion(result)
+            }else{
+                print("getPrefetchLocationsFromLaunchRule attributes: \(String(describing: attributes))")
+                if let rawLocations = attributes?["TargetLocations"] as? String {
+                    if rawLocations.count > 0 {
+                        let newLocations = rawLocations.components(separatedBy: "|")
+                        if newLocations.count > 0 {
+                            result.append(contentsOf: newLocations)
+                        }
+                    }
+                }
+                completion(result)
+            }
+        }
+    }
+    
     static func getPrefetchedLocation(forKey key:PageName, location: String, completion: @escaping (String?) -> Void) {
-     //print("in prefetched content location fn")
+        //print("in prefetched content location fn")
         if(AEPSDKManager.isContentPrefetched == true){
             let locationParameters:[String:String] = AEPSDKManager.getLocationParameters(forKey: key)
             let targetParameters = ACPTargetParameters(parameters: locationParameters,
@@ -78,13 +121,17 @@ struct AEPSDKManager {
                                                             product: nil,
                                                             order: nil)
             let request = ACPTargetRequestObject(name: location, targetParameters: targetParameters, defaultContent: "") { (response) in
-                print("inside prefetched content request. Will send Notification")
+                print("getPrefetchedLocation: will send Notification for \(location)")
                 ACPTarget.locationsDisplayed([location], with: targetParameters)
                 completion(response)
             }
             let requests = [request]
             ACPTarget.retrieveLocationContent(requests, with: targetParameters)
             
+        }else{
+            //TODO: test!
+            print("getPrefetchedLocation: nothing was prefetched for this location")
+            completion("")
         }
         
     }
@@ -170,10 +217,14 @@ struct AEPSDKManager {
         let _ : [String: String] = ["customerID":"781456718571634714756",
                                               "anotherID":"907862348792346"];
         
-        let identifiers : [String: String] = ["guid":"051b13056dee1d200s",
-                                              "hhid":"HHH0660000000629759",
-                                              /*"svocid":"051b13056dee1d200s",
-                                              "b2b":"051b13056dee1d200s"*/];
+        let identifiers : [String: String] = ["00a":"32463547364576",
+                                              "ddd":"051b13056dee1d200s",
+                                              "ccc":"051b13056dee1d200s",
+                                              "bbb":"HHH0660000000629759",
+                                              "aaa": "3452462563457647"
+                                              
+                                              
+                                              /*"b2b":"051b13056dee1d200s"*/];
         
         ACPIdentity.syncIdentifiers(identifiers, authentication: .authenticated)
         

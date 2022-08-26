@@ -1,28 +1,30 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-target 'AGS300-iOS-Demo' do
+target 'AEP-Swift-Demo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'ACPGriffon', '~> 1.0'
-  pod 'ACPPlacesMonitor', '~> 2.0'
-  pod 'ACPPlaces', '~> 1.0'
-  pod 'ACPMobileServices', '~> 1.0'
-  pod 'ACPAudience', '~> 2.0'
-  pod 'ACPAnalytics', '~> 2.0'
-  pod 'ACPTarget', '~> 2.1'
-  pod 'ACPCore', '~> 2.0'
-  pod 'ACPUserProfile', '~> 2.0'
+  pod 'AEPAssurance', '~> 3.0'
+  pod 'AEPPlaces', '~> 3.0'
+  pod 'AEPMobileServices', '~> 3.0'
+  pod 'AEPAudience', '~> 3.0'
+  pod 'AEPAnalytics', '~> 3.0'
+  pod 'AEPTarget', '~> 3.2'
+  pod 'AEPCore', '~> 3.0'
+  pod 'AEPIdentity', '~> 3.0'
+  pod 'AEPSignal', '~>3.0'
+  pod 'AEPLifecycle', '~>3.0'
+  pod 'AEPUserProfile', '~> 3.0'
 
-  # Pods for AGS300-iOS-Demo
+  # Pods for AEP-Swift-Demo
 
-  target 'AGS300-iOS-DemoTests' do
+  target 'AEP-Swift-DemoTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'AGS300-iOS-DemoUITests' do
+  target 'AEP-Swift-DemoUITests' do
     inherit! :search_paths
     # Pods for testing
   end

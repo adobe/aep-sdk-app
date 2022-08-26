@@ -1,0 +1,6 @@
+framework module Pods_AEP_Swift_DemoTests {
+  umbrella header "Pods-AEP-Swift-DemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

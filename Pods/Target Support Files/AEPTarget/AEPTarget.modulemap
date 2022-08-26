@@ -1,0 +1,6 @@
+framework module AEPTarget {
+  umbrella header "AEPTarget-umbrella.h"
+
+  export *
+  module * { export * }
+}

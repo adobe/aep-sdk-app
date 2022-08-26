@@ -1,6 +1,0 @@
-framework module Pods_AGS300_iOS_DemoUITests {
-  umbrella header "Pods-AGS300-iOS-DemoUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

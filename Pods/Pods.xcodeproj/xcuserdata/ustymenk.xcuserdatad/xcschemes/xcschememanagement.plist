@@ -4,62 +4,82 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ACPAnalytics.xcscheme</key>
+		<key>AEPAnalytics.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPAudience.xcscheme</key>
+		<key>AEPAssurance.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPCore.xcscheme</key>
+		<key>AEPAudience.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPGriffon.xcscheme</key>
+		<key>AEPCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPMobileServices.xcscheme</key>
+		<key>AEPIdentity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPPlaces.xcscheme</key>
+		<key>AEPLifecycle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPPlacesMonitor.xcscheme</key>
+		<key>AEPMobileServices.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPTarget.xcscheme</key>
+		<key>AEPPlaces.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ACPUserProfile.xcscheme</key>
+		<key>AEPRulesEngine.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AGS300-iOS-Demo.xcscheme</key>
+		<key>AEPServices.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AGS300-iOS-DemoTests.xcscheme</key>
+		<key>AEPSignal.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AGS300-iOS-DemoUITests.xcscheme</key>
+		<key>AEPTarget.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AEPUserProfile.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AEP-Swift-Demo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AEP-Swift-DemoTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AEP-Swift-DemoUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

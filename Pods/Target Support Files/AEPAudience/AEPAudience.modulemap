@@ -1,0 +1,6 @@
+framework module AEPAudience {
+  umbrella header "AEPAudience-umbrella.h"
+
+  export *
+  module * { export * }
+}

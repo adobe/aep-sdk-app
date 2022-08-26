@@ -1,6 +1,0 @@
-framework module ACPAudience {
-  umbrella header "ACPAudience-umbrella.h"
-
-  export *
-  module * { export * }
-}

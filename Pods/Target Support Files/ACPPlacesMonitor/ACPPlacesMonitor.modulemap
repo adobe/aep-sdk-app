@@ -1,6 +1,0 @@
-framework module ACPPlacesMonitor {
-  umbrella header "ACPPlacesMonitor-umbrella.h"
-
-  export *
-  module * { export * }
-}

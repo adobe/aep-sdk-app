@@ -36,12 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppTrackingService.shared.startTracking()
         
         let launchIds = [
-            "launch-EN8ed0d2fc361c483f8705bb4d0d612a39-development",    // AGS300 dev
-            "launch-EN4ffc6da8d03348f6b3deaed82adc2a15-staging",        // CVS staging
-            "launch-ENcd7ca0886f0f4596bcef8cf17725c940-development",    // CVS dev
-            "633870858fb6/43a1204b4c00/launch-90420bf7c8b6-development", // THD
-            "22bf1a13013f/98eba92aeaa2/launch-164e526e7ddc", // Jim K.
-            "2ea7ee22c8c2/1b9a9c2a8e2d/launch-752a1cb53801-staging" //VCG MVA App, Staging, Verizon
+            "launch-EN8ed0d2fc361c483f8705bb4d0d612a39-development"
         ]
         
         // AEP SDK config:

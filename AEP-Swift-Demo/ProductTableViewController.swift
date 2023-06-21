@@ -1,10 +1,13 @@
 //
 //  ProductTableViewController.swift
-//  AGS300-iOS-Demo
-//
-//  Created by Vadym Ustymenko on 3/11/20.
-//  Copyright © 2020 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 
 import UIKit
 
@@ -98,7 +101,7 @@ extension ProductTableViewController{
     
     @objc func getTargetOffers(){
         print("in getTargetOffers")
-        // Handle prefetched content
+        // Dynamic calls, not prefetch
         AEPSDKManager.getLocation(forKey: .GlobalPage, location: "sdk-demo-4") { (content) in
             print("getTargetOffers content \(String(describing: content))")
             if let message = AEPSDKManager.getJsonValueFromTargetOffer(key: "promocode", response: content),
@@ -122,6 +125,14 @@ extension ProductTableViewController{
                         //alertController.addAction(cancelAction)
                         self.present(alertController, animated: true, completion: nil)
                     }
+            }
+        }
+        AEPSDKManager.getLocation(forKey: .GlobalPage, location: "sdk-demo-6") { (content) in
+            print("getTargetOffers content \(String(describing: content))")
+            if let message = AEPSDKManager.getJsonValueFromTargetOffer(key: "promocode", response: content),
+                message.count > 0 {
+                    print("Target message \(message)")
+                    
             }
         }
 

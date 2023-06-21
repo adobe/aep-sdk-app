@@ -1,10 +1,13 @@
 //
 //  AdobeMCManager.swift
-//  AGS300-iOS-Demo
-//
-//  Created by ustymenk on 5/29/18.
-//  Copyright © 2018 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 
 import Foundation
 import AEPTarget
@@ -29,11 +32,10 @@ extension Notification.Name {
 struct AEPSDKManager {
     
     static let locationsToPrefetch = [
-        ["location": "sdk-demo-1", "params": PageName.GlobalPage ],
-        ["location": "sdk-demo-2", "params": PageName.GlobalPage ],
-        ["location": "sdk-demo-3", "params": PageName.GlobalPage ]
-        
-        // temporarily test a4t with prefetching
+        ["location": "sdk-demo-1", "params": PageName.GlobalPage ],// XT activity "Mobile AEP SDK - Prefetch POC - 1": delivers JSON offer with an image, targets AAM audience or falls back to All Visitors
+        ["location": "sdk-demo-2", "params": PageName.GlobalPage ]// XT activity "Mobile AEP SDK - Prefetch POC - 2": delivers JSON offer with a message, targets AAM audience or falls back to All Visitors
+        //,["location": "sdk-demo-3", "params": PageName.GlobalPage ]
+        // temporarily test 3 A4T with prefetched JSON offers (named "Mobile AEP SDK - Pref A4T A/B POC - Part 1/2/3")
         ,["location": "pref-a4t-location-1", "params": PageName.GlobalPage] // activity ID 454665
                                                                             // "tnta": "454665:1:0|0,454665:1:0|2,454665:1:0|1"
         ,["location": "pref-a4t-location-2", "params": PageName.GlobalPage] // activity ID 454666

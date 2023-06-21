@@ -1,10 +1,13 @@
 //
 //  AppTrackingService.swift
-//  AGS300-iOS-Demo
-//
-//  Created by Vadym Ustymenko on 3/3/20.
-//  Copyright © 2020 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 
 import Foundation
 import CoreLocation

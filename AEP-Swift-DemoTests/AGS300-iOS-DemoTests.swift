@@ -2,9 +2,6 @@
 //  AGS300-iOS-DemoTests.swift
 //  AGS300-iOS-DemoTests
 //
-//  Created by ustymenk on 5/18/18.
-//  Copyright © 2018 VUES. All rights reserved.
-//
 
 import XCTest
 @testable import AGS300-iOS-Demo

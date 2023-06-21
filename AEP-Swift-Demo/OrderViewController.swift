@@ -1,10 +1,13 @@
 //
 //  OrderViewController.swift
-//  AGS300-iOS-Demo
-//
-//  Created by Vadym Ustymenko on 12/3/19.
-//  Copyright © 2019 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 
 import UIKit
 import AEPCore

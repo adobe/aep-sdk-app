@@ -2,9 +2,7 @@
 //  AGS300-iOS-DemoUITests.swift
 //  AGS300-iOS-DemoUITests
 //
-//  Created by ustymenk on 5/18/18.
-//  Copyright © 2018 VUES. All rights reserved.
-//
+
 
 import XCTest
 

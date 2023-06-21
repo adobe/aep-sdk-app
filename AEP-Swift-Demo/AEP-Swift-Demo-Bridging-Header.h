@@ -1,18 +1,9 @@
-//
-//  AGS300-iOS-Demo-Bridging-Header.h
-//  AGS300-iOS-Demo
-//
-//  Created by ustymenk on 5/21/18.
-//  Copyright © 2018 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
 
-//#import "ADBMobile.h"
-//
-//#ifndef TMobileAdobeMCPOC_Bridging_Header_h
-//#define TMobileAdobeMCPOC_Bridging_Header_h
-//
-//
-//#endif /* TMobileAdobeMCPOC_Bridging_Header_h */
-
-
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 

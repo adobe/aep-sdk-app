@@ -1,10 +1,13 @@
 //
 //  AppDelegate.swift
-//  AGS300-iOS-Demo
-//
-//  Created by ustymenk on 5/18/18.
-//  Copyright © 2018 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 
 import UIKit
 
@@ -37,7 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "launch-EN4ffc6da8d03348f6b3deaed82adc2a15-staging",        // CVS staging
             "launch-ENcd7ca0886f0f4596bcef8cf17725c940-development",    // CVS dev
             "633870858fb6/43a1204b4c00/launch-90420bf7c8b6-development", // THD
-            "22bf1a13013f/98eba92aeaa2/launch-164e526e7ddc" // Jim K.
+            "22bf1a13013f/98eba92aeaa2/launch-164e526e7ddc", // Jim K.
+            "2ea7ee22c8c2/1b9a9c2a8e2d/launch-752a1cb53801-staging" //VCG MVA App, Staging, Verizon
         ]
         
         // AEP SDK config:
@@ -61,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //Indicates how long, in seconds, Places membership information for the device will remain valid. Default value of 3600 (seconds in an hour).
             MobileCore.updateConfigurationWith(configDict: ["places.membershipttl" : 1800])
             MobileCore.updateConfigurationWith(configDict: ["target.timeout": 5]) //cause a timeout
+            MobileCore.updateConfigurationWith(configDict: ["target.previewEnabled": true]) //preview for target
             //AEPCore.updateConfiguration(["target.environmentId":5062])// Prod
             if appState != .background {
                 MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
@@ -126,7 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         print("URL is parsed: \(AEPSDKManager.appEntryUrlParameters)")
         
-        Assurance.startSession(url: url) // start Assurance (ex Griffon) session and go to https://experience.adobe.com/#/@ags300/griffon
+        //Assurance.startSession(url: url) // start Assurance (ex Griffon) session and go to https://experience.adobe.com/#/@ags300/griffon
         
         // AEP SDK deep linking/preview
         if url.scheme == "com.adobe.targetmobile"{

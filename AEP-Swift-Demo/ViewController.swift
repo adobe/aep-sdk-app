@@ -1,10 +1,13 @@
 //
 //  ViewController.swift
-//  AGS300-iOS-Demo
-//
-//  Created by ustymenk on 5/18/18.
-//  Copyright © 2018 VUES. All rights reserved.
-//
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
 
 import UIKit
 
@@ -233,6 +236,16 @@ extension ViewController{
                         }
                         self.homeImage?.load(url: URL(string: bannerUrl)!)
                     }
+            }
+        }
+        
+        //TEST
+        AEPSDKManager.getLocation(forKey: .GlobalPage, location: "sdk-demo-3") { (content) in
+            print("getTargetOffers content \(String(describing: content))")
+            if let value = AEPSDKManager.getJsonValueFromTargetOffer(key: "exp", response: content),
+               value.count > 0 {
+                    print("Target message \(value)")
+                    
             }
         }
 
